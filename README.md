@@ -1,6 +1,6 @@
 # OpenCore For Dell 5593
 此EFI适用于Dell灵越5593型号笔记本电脑（1035G1）。经过不懈的研究，折腾了好几天，完美度终于达到95%+！
-已经更新OC0.7.1/安装Bigsur11.5.1
+已更新OC0.7.1/已安装Bigsur11.5+11.5.1
 
 ## 我的配置
 | 硬件 |型号  |
@@ -27,6 +27,23 @@
 <img src="https://z3.ax1x.com/2021/08/07/fMriwj.png" width = "657" height = "400" alt="" align=center />
 <img src="https://z3.ax1x.com/2021/08/07/fMrAkn.png" width = "657" height = "400" alt="" align=center />
 
+## 正常项目清单
+
+- [x] ALC236 内部扬声器(耳机正常)
+- [x] ALC236 内部麦克风(耳机不工作)
+- [x] 所有的USB端口（如不符请自行定制）
+- [x] SpeedStep / Sleep
+- [x] 带有手势的I2C触摸板
+- [x] 亮度调节快捷键
+- [x] Wi-Fi and Bluetooth Intel  Module（AX201）
+- [x] Realtek RTL8100 LAN 有线网卡
+- [x] 笔记本合盖睡眠
+- [x] ACPI 电池
+- [x] 从OpenCore启动Windows
+- [x] HDMI 输出
+- [x] 睡眠唤醒（ice lake）
+- [ ] 
+
 ## Tips*注意*：
 1.建议解锁CFG Lock，并在Kernel->Quirks 关闭 AppleCpuCfgLock 和 AppleXcpmCfgLock，获得更好的电源管理体验
 
@@ -41,6 +58,7 @@
 6.EFI已清空三码，请安装后自己注入三码，以开启iMessage、Facetime、Siri
 
 7.睡眠可能有问题，有待观察（ice lake 10nm）
+
 ## 更新日志
 ##### 2021.08.07 初次上传
 - OC已更新到最新0.7.1正式版，更新部分驱动，支持Bigsur11.5.1+
@@ -52,6 +70,6 @@
 - 修复Windows10引导问题
 - ……
 ---
-	感谢黑果大佬们的教程及排错经验！
+	感谢黑果大佬们的教程及排错经验！没有他们的付出就没有今日的黑果
 ## 最后
-如果我的分享对你有帮助，可以点个Star🌟，xiexie！
+如果我的分享对你有帮助，可以点个Star🌟，更新提醒，xiexie！
