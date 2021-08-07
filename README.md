@@ -19,12 +19,9 @@
 |  鼠标| 罗技M590|
 
 ## 系统截图
-<img src="https://z3.ax1x.com/2021/08/07/fMwQiV.png" width = "657" height = "400" alt="" align=center />
-<img src="https://github.com/xzz024/OC7.1-EFI-For-Dell-5593-Bigsur/blob/main/ScreenShot/OC%20Start.png" width = "657" height = "400" alt="" align=center />
-<img src="https://z3.ax1x.com/2021/08/07/fM0w0s.png" width = "657" height = "400" alt="" align=center />
-<img src="https://z3.ax1x.com/2021/08/07/fMDvfP.png" width = "657" height = "400" alt="" align=center />
-<img src="https://z3.ax1x.com/2021/08/07/fMr9Og.png" width = "657" height = "400" alt="" align=center />
-<img src="https://z3.ax1x.com/2021/08/07/fMriwj.png" width = "657" height = "400" alt="" align=center />
+<img src="https://z3.ax1x.com/2021/08/07/fMwQiV.png" width = "657" height = "400" alt="" align=center /><img src="https://github.com/xzz024/OC7.1-EFI-For-Dell-5593-Bigsur/blob/main/ScreenShot/OC%20Start.png" width = "657" height = "400" alt="" align=center />
+<img src="https://z3.ax1x.com/2021/08/07/fM0w0s.png" width = "657" height = "400" alt="" align=center /><img src="https://z3.ax1x.com/2021/08/07/fMDvfP.png" width = "657" height = "400" alt="" align=center />
+<img src="https://z3.ax1x.com/2021/08/07/fMr9Og.png" width = "657" height = "400" alt="" align=center /><img src="https://z3.ax1x.com/2021/08/07/fMriwj.png" width = "657" height = "400" alt="" align=center />
 <img src="https://z3.ax1x.com/2021/08/07/fMrAkn.png" width = "657" height = "400" alt="" align=center />
 
 ## 正常项目清单
@@ -32,12 +29,13 @@
 - [x] ALC236 内部扬声器(耳机正常)
 - [x] ALC236 内部麦克风(耳机不工作)
 - [x] 所有的USB端口（如不符请自行定制）
-- [x] SpeedStep / Sleep
+- [x] 风扇调速、CPU变频 / 睡眠
 - [x] 带有手势的I2C触摸板
 - [x] 亮度调节快捷键
-- [x] Wi-Fi and Bluetooth Intel  Module（AX201）
+- [x] Wi-Fi and Bluetooth Intel Module（AX201）
 	- [x] 跨设备复制、接力
-	- [ ] 睡眠唤醒（ice lake 10nm）
+	- [ ] 无线随航、隔空投送
+	- [ ] Apple Watch解锁
 - [x] Realtek RTL8100 LAN 有线网卡
 - [x] 笔记本合盖睡眠
 - [x] ACPI 电池
@@ -65,6 +63,6 @@
 - 修复Windows10引导问题
 - ……
 ---
-	感谢黑果大佬们的教程及排错经验！对我的帮助很大
+	感谢黑果大佬们的教程及排错经验！
 ## 最后
 如果我的分享对你有帮助，可以点个Star🌟，更新提醒，xiexie！
