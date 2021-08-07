@@ -1,5 +1,5 @@
-# OpenCore For Dell 5593
-此EFI适用于Dell灵越5593型号笔记本电脑（1035G1）。经过不懈的研究，折腾了好几天，完美度终于达到95%+！
+# Open Core DELL Inspiron 5593
+此EFI适用于Dell灵越5593型号笔记本电脑（1035G1）。经过不懈的研究，完美度达到95%+！
 已更新OC0.7.1/已安装Bigsur11.5+11.5.1
 
 ## 我的配置
@@ -19,15 +19,18 @@
 |  鼠标| 罗技M590|
 
 ## 系统截图
-<img src="https://z3.ax1x.com/2021/08/07/fMwQiV.png" width = "657" height = "400" alt="" align=center /><img src="https://github.com/xzz024/OC7.1-EFI-For-Dell-5593-Bigsur/blob/main/ScreenShot/OC%20Start.png" width = "657" height = "400" alt="" align=center />
-<img src="https://z3.ax1x.com/2021/08/07/fM0w0s.png" width = "657" height = "400" alt="" align=center /><img src="https://z3.ax1x.com/2021/08/07/fMDvfP.png" width = "657" height = "400" alt="" align=center />
-<img src="https://z3.ax1x.com/2021/08/07/fMr9Og.png" width = "657" height = "400" alt="" align=center /><img src="https://z3.ax1x.com/2021/08/07/fMriwj.png" width = "657" height = "400" alt="" align=center />
+<img src="https://z3.ax1x.com/2021/08/07/fMwQiV.png" width = "657" height = "400" alt="" align=center />
+<img src="https://github.com/xzz024/OC7.1-EFI-For-Dell-5593-Bigsur/blob/main/ScreenShot/OC%20Start.png" width = "657" height = "400" alt="" align=center />
+<img src="https://z3.ax1x.com/2021/08/07/fM0w0s.png" width = "657" height = "400" alt="" align=center />
+<img src="https://z3.ax1x.com/2021/08/07/fMDvfP.png" width = "657" height = "400" alt="" align=center />
+<img src="https://z3.ax1x.com/2021/08/07/fMr9Og.png" width = "657" height = "400" alt="" align=center />
+<img src="https://z3.ax1x.com/2021/08/07/fMriwj.png" width = "657" height = "400" alt="" align=center />
 <img src="https://z3.ax1x.com/2021/08/07/fMrAkn.png" width = "657" height = "400" alt="" align=center />
 
-## 正常项目清单
+## 项目清单
 
 - [x] ALC236 内部扬声器(耳机正常)
-- [x] ALC236 内部麦克风(耳机不工作)
+- [x] ALC236 内部麦克风(耳机不正常)
 - [x] 所有的USB端口（如不符请自行定制）
 - [x] 风扇调速、CPU变频 / 睡眠
 - [x] 带有手势的I2C触摸板
