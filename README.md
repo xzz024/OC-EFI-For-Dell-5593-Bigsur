@@ -20,6 +20,7 @@
 
 ![image](https://github.com/xzz024/OC7.1-EFI-For-Dell-5593-Bigsur/blob/main/ScreenShot/MyDell5593.png)
 ![image](https://github.com/xzz024/OC7.1-EFI-For-Dell-5593-Bigsur/blob/main/ScreenShot/OC%20Start.png)
+<img src="https://github.com/xzz024/OC7.1-EFI-For-Dell-5593-Bigsur/blob/main/ScreenShot/OC%20Start.png" width = "200" height = "300" alt="" align=center />
 
 ## Tips*注意*：
 1.建议解锁CFG Lock，并在Kernel->Quirks 关闭 AppleCpuCfgLock 和 AppleXcpmCfgLock，获得更好的电源管理体验
@@ -35,7 +36,7 @@
 6.EFI已清空三码，请安装后自己注入三码，以开启iMessage、Facetime、Siri
 
 7.睡眠可能有问题，有待观察（ice lake 10nm）
-## 日志
+## 更新日志
 ##### 2021.08.07 初次上传
 - OC已更新到最新0.7.1正式版，更新部分驱动，支持Bigsur11.5.1+
 - 修复亮度调节快捷键（`F6`降低亮度，`F7`增加亮度）、合盖即可进入睡眠
@@ -47,5 +48,5 @@
 - ……
 ---
 	感谢黑果大佬们的教程及排错经验！
-## 日志
+## 最后
 如果我的分享对你有帮助，可以点个Star🌟，xiexie！
