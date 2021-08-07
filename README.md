@@ -1,5 +1,5 @@
 # OpenCore For Dell 5593
-此EFI适用于Dell灵越5593型号笔记本电脑（1035G1）。在暑期，经过不懈的研究，折腾了几天，终于达到90%！
+此EFI适用于Dell灵越5593型号笔记本电脑（1035G1）。经过不懈的研究，折腾了好几天，完美度终于达到95%+！
 已经更新OC0.7.1/安装Bigsur11.5.1
 
 ## 我的配置
@@ -22,7 +22,10 @@
 <img src="https://z3.ax1x.com/2021/08/07/fMwQiV.png" width = "657" height = "400" alt="" align=center />
 <img src="https://github.com/xzz024/OC7.1-EFI-For-Dell-5593-Bigsur/blob/main/ScreenShot/OC%20Start.png" width = "657" height = "400" alt="" align=center />
 <img src="https://z3.ax1x.com/2021/08/07/fM0w0s.png" width = "657" height = "400" alt="" align=center />
-
+<img src="https://z3.ax1x.com/2021/08/07/fMDvfP.png" width = "657" height = "400" alt="" align=center />
+<img src="https://z3.ax1x.com/2021/08/07/fMr9Og.png" width = "657" height = "400" alt="" align=center />
+<img src="https://z3.ax1x.com/2021/08/07/fMriwj.png" width = "657" height = "400" alt="" align=center />
+<img src="https://z3.ax1x.com/2021/08/07/fMrAkn.png" width = "657" height = "400" alt="" align=center />
 
 ## Tips*注意*：
 1.建议解锁CFG Lock，并在Kernel->Quirks 关闭 AppleCpuCfgLock 和 AppleXcpmCfgLock，获得更好的电源管理体验
