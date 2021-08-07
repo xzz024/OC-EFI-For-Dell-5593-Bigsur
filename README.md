@@ -18,9 +18,11 @@
 |  键盘|内置 |
 |  鼠标| 罗技M590|
 
-
+## 系统截图
 <img src="https://z3.ax1x.com/2021/08/07/fMwQiV.png" width = "657" height = "400" alt="" align=center />
 <img src="https://github.com/xzz024/OC7.1-EFI-For-Dell-5593-Bigsur/blob/main/ScreenShot/OC%20Start.png" width = "657" height = "400" alt="" align=center />
+<img src="https://z3.ax1x.com/2021/08/07/fM0w0s.png" width = "657" height = "400" alt="" align=center />
+
 
 ## Tips*注意*：
 1.建议解锁CFG Lock，并在Kernel->Quirks 关闭 AppleCpuCfgLock 和 AppleXcpmCfgLock，获得更好的电源管理体验
