@@ -19,6 +19,8 @@
 |  鼠标| 罗技M590|
 
 ![image](https://github.com/xzz024/OC7.1-EFI-For-Dell-5593-Bigsur/blob/main/ScreenShot/MyDell5593.png)
+![image](https://github.com/xzz024/OC7.1-EFI-For-Dell-5593-Bigsur/blob/main/ScreenShot/OC%20Start.png)
+
 ## Tips*注意*：
 1.建议解锁CFG Lock，并在Kernel->Quirks 关闭 AppleCpuCfgLock 和 AppleXcpmCfgLock，获得更好的电源管理体验
 
