@@ -19,23 +19,24 @@
 |  鼠标| 罗技M590|
 
 ## 系统截图
-<img src="https://z3.ax1x.com/2021/08/07/fMwQiV.png" width = "657" height = "400" alt="" align=center />
-<img src="https://github.com/xzz024/OC7.1-EFI-For-Dell-5593-Bigsur/blob/main/ScreenShot/OC%20Start.png" width = "657" height = "400" alt="" align=center />
-<img src="https://z3.ax1x.com/2021/08/07/fM0w0s.png" width = "657" height = "400" alt="" align=center />
-<img src="https://z3.ax1x.com/2021/08/07/fMDvfP.png" width = "657" height = "400" alt="" align=center />
-<img src="https://z3.ax1x.com/2021/08/07/fMr9Og.png" width = "657" height = "400" alt="" align=center />
-<img src="https://z3.ax1x.com/2021/08/07/fMriwj.png" width = "657" height = "400" alt="" align=center />
-<img src="https://z3.ax1x.com/2021/08/07/fMrAkn.png" width = "657" height = "400" alt="" align=center />
+<img src="https://z3.ax1x.com/2021/08/08/fQqK9P.png" width = "657" height = "436" alt="mymac" align=center />
+<img src="https://z3.ax1x.com/2021/08/08/fQqa90.png" width = "657" height = "462" alt="gpu" align=center />
+<img src="https://z3.ax1x.com/2021/08/08/fQOROO.png" width = "657" height = "482" alt="hidpi" align=center />
+<img src="https://z3.ax1x.com/2021/08/08/fQLxRx.png" width = "657" height = "454" alt="xianka" align=center />
+<img src="https://z3.ax1x.com/2021/08/08/fQOXnS.png" width = "657" height = "691" alt="usb" align=center />
+<img src="https://z3.ax1x.com/2021/08/08/fQXicV.png" width = "657" height = "462" alt="wifi" align=center />
+<img src="https://z3.ax1x.com/2021/08/07/fMr9Og.png" width = "657" height = "400" alt="OCStart" align=center />
 
 ## BIOS设置-5593
-- System Configuration➡️SATA Operation（AHCI）
-	- 修改前若有win10系统，请进入安全模式修改它，详情见[百度](baidu.com)
-- Security➡️Absolute®️（Disable Absolute®️）
-- Security➡️SMM Security Mitigation（OFF）
-- Security➡️Intel®️ SGX（Disabled）
-- Secure Boot➡️Enable Secure Boot（OFF）
-- Secure Boot➡️Secure Boot Mode（Deployed Mode）
-- ……
+- `System Configuration`➡️`SATA Operation`（`AHCI`）
+	- 修改前若有win10系统，请进入先安全模式修改它
+- `Security`➡️`Absolute®️`（`Disable` `Absolute®️`）
+- `Security`➡️`SMM Security Mitigation`（`OFF`）
+- `Security`➡️`Intel®️ Platform Trust Technology On`（`OFF`）
+- `Security`➡️`Intel®️ SGX`（`Disabled`）
+- `Secure Boot`➡️`Enable Secure Boot`（`OFF`）
+- `Secure Boot`➡️`Secure Boot Mode`（`Deployed Mode`）
+- （非必须）`CFG Lock`解锁`Setup_Var 0x43 0x0`[BIOS解锁工具](https://www.jianguoyun.com/p/DaUvc2AQ_pOuCBj31IYE)`操作不当后果自负`
 
 ## 项目清单
 
@@ -62,7 +63,7 @@
 - 声音、亮度调节均正常，可直接按Fx键进行调节
 - USB端口已定制，如不符合你的端口，请删除`USBPorts.kext`并自行定制
 - 支持合盖睡眠、电池电量正常
-- EFI已清空三码，请安装后自己注入三码，以开启iMessage、Facetime、Siri
+- EFI已清空三码，请安装后注入三码，以开启iMessage、Facetime、Siri
 - 睡眠可能有问题，有待观察（ice lake 10nm）
 
 ## 更新日志
@@ -75,7 +76,17 @@
 - 驱动触控板，支持手势操作
 - 修复Windows10引导问题
 - ……
----
-	感谢黑果大佬们的教程及排错经验！
+## 教程&致谢
+- [OpenCore Install Guide](https://dortania.github.io/OpenCore-Install-Guide/)
+- [精解OpenCore - 黑果小兵的Blog](https://blog.daliansky.net/OpenCore-BootLoader.html)
+- [使用OpenCore引导黑苹果 - Xjn's Blog](https://blog.xjn819.com/post/opencore-guide.html)
+- [OpenCore Vanilla Guide](https://khronokernel-2.gitbook.io/opencore-vanilla-desktop-guide/)
+- [HiDPI是什么？以及黑苹果如何开HiDPI - 国光](https://www.sqlsec.com/2018/09/hidpi.html)
+- [OpenIntelWireless](https://openintelwireless.github.io/)
+- [远景论坛](https://bbs.pcbeta.com/forum.php?gid=86)
+- [tonymacx86](https://www.tonymacx86.com/)
+- ……
+
+		感谢黑果大佬们的教程及排错经验！
 ## 最后
-如果我的分享对你有帮助，可以点个Star🌟，更新提醒，xiexie！
+如果我的分享对你有帮助，可以点个Star🌟，xiexie！
