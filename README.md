@@ -1,6 +1,6 @@
 # Open Core DELL Inspiron 5593
-此EFI适用于Dell灵越5593型号笔记本电脑（1035G1）。经过不懈的研究，完美度达到95%+！
-已更新OC0.7.1/已安装Bigsur11.5+11.5.1
+适用于Dell灵越5593型号笔记本电脑（1035G1）。经过不懈的研究，完美度达到95%+！
+已更新OC`0.7.1`/已安装`Big Sur`11.5+11.5.1
 
 ## 我的配置
 | 硬件 |型号  |
@@ -13,7 +13,7 @@
 | 板载网卡 |Realtek RTL8106E PCI Express Fast Ethernet |
 |  无线+蓝牙| Intel AX201 WIFI6 160Mhz|
 |  |~~Qualcomm QCA9377~~（已更换）|
-| 声卡 |Realtek ALC 236（已支持耳机） |
+| 声卡 |Realtek ALC 236（已支持插孔耳机） |
 | 显示器 |内置（15.6英寸） |
 |  键盘|内置 |
 |  鼠标| 罗技M590|
@@ -25,7 +25,7 @@
 <img src="https://z3.ax1x.com/2021/08/08/fQLxRx.png" width = "657" height = "454" alt="xianka" align=center />
 <img src="https://z3.ax1x.com/2021/08/08/fQOXnS.png" width = "657" height = "691" alt="usb" align=center />
 <img src="https://z3.ax1x.com/2021/08/08/fQXicV.png" width = "657" height = "462" alt="wifi" align=center />
-<img src="https://z3.ax1x.com/2021/08/07/fMr9Og.png" width = "657" height = "400" alt="OCStart" align=center />
+<img src="https://z3.ax1x.com/2021/08/08/fQv1Te.png" width = "657" height = "370" alt="OCStart" align=center />
 
 ## BIOS设置-5593
 - `System Configuration`➡️`SATA Operation`（`AHCI`）
@@ -59,7 +59,7 @@
 
 ## Tips*注意*：
 - 建议解锁CFG Lock，并在Kernel->Quirks 关闭 AppleCpuCfgLock 和 AppleXcpmCfgLock，获得更好的电源管理体验
-- 本机原来无线网卡为高通 ~~Qualcomm QCA9377~~，仅蓝牙可驱动，现已更换intel ax201。如对隔空投送等有需求，建议更换博通卡
+- 本机原来无线网卡为高通 ~~Qualcomm QCA9377~~，仅蓝牙可驱动，现已更换intel ax201。如对隔空投送等有需求，建议更换`博通卡`
 - 声音、亮度调节均正常，可直接按Fx键进行调节
 - USB端口已定制，如不符合你的端口，请删除`USBPorts.kext`并自行定制
 - 支持合盖睡眠、电池电量正常
@@ -67,7 +67,11 @@
 - 睡眠可能有问题，有待观察（ice lake 10nm）
 
 ## 更新日志
-##### 2021.08.07 初次上传
+#### 2021.08.08 更新驱动+修复小小小问题
+- 更新Intel Wifi、Bluetooth驱动至最新`V2.0.0`版本
+- 小修改使安装过程更友好
+- 截图添加
+#### 2021.08.07 初次上传
 - OC已更新到最新0.7.1正式版，更新部分驱动最新版，支持Bigsur11.5.1+
 - 修复亮度调节快捷键（`F6`降低亮度，`F7`增加亮度）、合盖即可进入睡眠
 - 调试并注入正确的声卡`layout-id`，扬声器、麦克风、耳机、均正常——ALC236
