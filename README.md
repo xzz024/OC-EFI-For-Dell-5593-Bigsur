@@ -28,7 +28,8 @@
 <img src="https://z3.ax1x.com/2021/08/07/fMrAkn.png" width = "657" height = "400" alt="" align=center />
 
 ## BIOS设置-5593
-- AHCI
+- System Configuration➡️SATA Operation（AHCI）
+	- 修改前若有win10系统，请进入安全模式修改它，详情见[百度](baidu.com)
 - Security➡️Absolute®️（Disable Absolute®️）
 - Security➡️SMM Security Mitigation（OFF）
 - Security➡️Intel®️ SGX（Disabled）
