@@ -27,6 +27,15 @@
 <img src="https://z3.ax1x.com/2021/08/07/fMriwj.png" width = "657" height = "400" alt="" align=center />
 <img src="https://z3.ax1x.com/2021/08/07/fMrAkn.png" width = "657" height = "400" alt="" align=center />
 
+## BIOS设置-5593
+- AHCI
+- Security➡️Absolute®️（Disable Absolute®️）
+- Security➡️SMM Security Mitigation（OFF）
+- Security➡️Intel®️ SGX（Disabled）
+- Secure Boot➡️Enable Secure Boot（OFF）
+- Secure Boot➡️Secure Boot Mode（Deployed Mode）
+- ……
+
 ## 项目清单
 
 - [x] ALC236 内部扬声器(耳机正常)
