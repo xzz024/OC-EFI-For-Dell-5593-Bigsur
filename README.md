@@ -47,7 +47,7 @@
 - [x] 带有手势的I2C触摸板
 - [x] 亮度调节快捷键
 - [x] Wi-Fi and Bluetooth Intel Module（AX201）
-	- [x] 跨设备复制、接力
+	- [x] 跨设备复制、接力、定位服务
 	- [ ] 无线随航、隔空投送
 	- [ ] Apple Watch解锁
 - [x] Realtek RTL8100 LAN 有线网卡
@@ -63,7 +63,10 @@
 - 声音、亮度调节均正常，可直接按Fx键进行调节
 - USB端口已定制，如不符合你的端口，请删除`USBPorts.kext`并自行定制
 - 支持合盖睡眠、电池电量正常
-- EFI已清空三码，请安装后注入三码，以开启iMessage、Facetime、Siri
+- EFI已清空三码，请安装后注入三码，以开启iMessage、Facetime、Siri，更多[教程](https://dortania.github.io/OpenCore-Post-Install/universal/iservices.html#verifying-nvram)请自行爬贴，同时别忘记用脚本Clean out old attempts
+- 如果有双系统win需求，在win10下导入此注册表可解决与Mac时间不同步问题[tool.reg](https://www.jianguoyun.com/p/DWFYhFoQ_pOuCBiI1oYE)
+- 如果是高通QCA9377的无线卡，且没有更换计划可使用USB网卡，驱动[RTLWlanU BigSur.kext](https://www.jianguoyun.com/p/DUGTl18Q_pOuCBj01YYE)
+- 开启HIDPI见👇的教程，建议开启，开启后设置`1440×810`，类似Win10下缩放`125%`，字体更加清晰，同时记得在NVRAM中修改`UIScale`为02保持开机Logo大小一致
 - 睡眠可能有问题，有待观察（ice lake 10nm）
 
 ## 更新日志
@@ -89,7 +92,7 @@
 - [OpenIntelWireless](https://openintelwireless.github.io/)
 - [远景论坛](https://bbs.pcbeta.com/forum.php?gid=86)
 - [tonymacx86](https://www.tonymacx86.com/)
-- ……
+- [……](http://www.baidu.com)
 
 		感谢黑果大佬们的教程及排错经验！
 ## 最后
