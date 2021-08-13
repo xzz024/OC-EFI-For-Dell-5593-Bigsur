@@ -67,11 +67,7 @@
 - EFI已清空三码，请安装后注入三码，以开启iMessage、Facetime、Siri，更多[教程](https://dortania.github.io/OpenCore-Post-Install/universal/iservices.html#verifying-nvram)请自行爬贴，同时别忘记用脚本Clean out old attempts
 - 如果有双系统win需求，在win10下导入此注册表可解决与Mac时间不同步问题[tool.reg](https://www.jianguoyun.com/p/DWFYhFoQ_pOuCBiI1oYE)
 - 如果是高通QCA9377的无线卡，且没有更换计划可使用USB网卡，驱动[RTLWlanU BigSur.kext](https://www.jianguoyun.com/p/DUGTl18Q_pOuCBj01YYE)
-<<<<<<< HEAD
 - 开启HIDPI见👇的教程，建议开启，开启后设置`1440×810`，类似Win10下缩放`125%`，字体更加清晰，同时记得在NVRAM中修改`UIScale`为02保持开机Logo大小一致。如果在线脚本有问题，请使用离线脚本[HIDPI](https://www.jianguoyun.com/p/DTopycAQ_pOuCBiO7YcE)开启
-=======
-- 开启HIDPI见👇的教程，建议开启，开启后自行设置适合分辨率，字体更加清晰，同时记得在NVRAM中修改`UIScale`为02保持开机Logo大小一致
->>>>>>> a1019f4df2b39aef52271001be49213738337ff9
 - 睡眠可能有问题，有待观察（ice lake 10nm）
 
 ## 更新日志
@@ -96,8 +92,8 @@ Loding……
 ## 教程&致谢
 - [OpenCore Install Guide](https://dortania.github.io/OpenCore-Install-Guide/)
 - [精解OpenCore - 黑果小兵的Blog](https://blog.daliansky.net/OpenCore-BootLoader.html)
-- [使用OpenCore引导黑苹果 - Xjn's Blog](https://blog.xjn819.com/post/opencore-guide.html)
 - [FireWlof](https://github.com/0xFireWolf/WhateverGreen)
+- [使用OpenCore引导黑苹果 - Xjn's Blog](https://blog.xjn819.com/post/opencore-guide.html)
 - [OpenCore Vanilla Guide](https://khronokernel-2.gitbook.io/opencore-vanilla-desktop-guide/)
 - [HiDPI是什么？以及黑苹果如何开HiDPI - 国光](https://www.sqlsec.com/2018/09/hidpi.html)
 - [OpenIntelWireless](https://openintelwireless.github.io/)
