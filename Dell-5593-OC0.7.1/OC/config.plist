@@ -228,7 +228,7 @@
 				<key>AAPL,GfxYTile</key>
 				<data>AQAAAA==</data>
 				<key>AAPL,ig-platform-id</key>
-				<data>AABcig==</data>
+				<data>AQBcig==</data>
 				<key>device-id</key>
 				<data>XIoAAA==</data>
 				<key>dpcd-max-link-rate</key>
@@ -239,28 +239,27 @@
 				<data>AQAAAA==</data>
 				<key>enable-hdmi20</key>
 				<data>AQAAAA==</data>
-				<key>framebuffer-fbmem</key>
-				<data>AACQAA==</data>
 				<key>framebuffer-patch-enable</key>
 				<data>AQAAAA==</data>
-				<key>framebuffer-stolenmem</key>
-				<data>AAAwAQ==</data>
 				<key>hda-gfx</key>
 				<string>onboard-1</string>
 				<key>model</key>
 				<string>Intel UHD Graphics G1 [ice lake]</string>
+				<key>disable-external-gpu</key>
+				<data>AQAAAA==</data>
+				<key>enable-cdclk-frequency-fix</key>
+				<data>AQAAAA==</data>
+				<key>enable-dvmt-calc-fix</key>
+				<data>AQAAAA==</data>
+				<key>framebuffer-unifiedmem</key>
+				<data>AAAAwA==</data>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x1f,0x3)</key>
 			<dict>
 				<key>built-in</key>
 				<data>AQ==</data>
 				<key>layout-id</key>
-				<data>DgAAAA==</data>
-			</dict>
-			<key>PciRoot(0x0)/Pci(0x1D,0x0)/Pci(0x0,0x0)</key>
-			<dict>
-				<key>built-in</key>
-				<data>AQ==</data>
+				<data>DwAAAA==</data>
 			</dict>
 		</dict>
 		<key>Delete</key>
@@ -1036,7 +1035,7 @@
 				<key>SystemAudioVolume</key>
 				<data>Rg==</data>
 				<key>boot-args</key>
-				<string>-igfxcdc -igfxdvmt igfxfw=2</string>
+				<string>igfxfw=2 -noDC9 igfxrpsc=1</string>
 				<key>csr-active-config</key>
 				<data>5wMAAA==</data>
 				<key>prev-lang:kbd</key>

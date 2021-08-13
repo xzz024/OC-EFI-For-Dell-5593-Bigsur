@@ -1,6 +1,6 @@
 # Open Core DELL Inspiron 5593
-适用于Dell灵越5593型号笔记本电脑（1035G1）。经过不懈的研究，完美度达到95%+！
-已更新OC`0.7.1`/已安装`Big Sur`11.5+11.5.1
+适用于Dell灵越5593型号笔记本电脑（1035G1）。经过不懈的研究，完美度达到98%+！
+已更新OC`0.7.1`/已安装`Big Sur`11.5.2
 
 ## 我的配置
 | 硬件 |型号  |
@@ -51,11 +51,12 @@
 	- [ ] 无线随航、隔空投送
 	- [ ] Apple Watch解锁
 - [x] Realtek RTL8100 LAN 有线网卡
-- [x] 笔记本合盖睡眠
+- [x] 笔记本合盖睡眠`2021-08-13解决`
 - [x] ACPI 电池
 - [x] 从OpenCore启动Windows
 - [x] HDMI 输出
-- [ ] 睡眠唤醒（ice lake 10nm）
+- [x] 睡眠唤醒（ice lake 10nm）`2021-08-13解决`
+- [ ] 开机登录界面按键闪屏，与鼠标指针花屏有关（待解决）
 
 ## Tips*注意*：
 - 建议解锁CFG Lock，并在Kernel->Quirks 关闭 AppleCpuCfgLock 和 AppleXcpmCfgLock，获得更好的电源管理体验
@@ -66,10 +67,12 @@
 - EFI已清空三码，请安装后注入三码，以开启iMessage、Facetime、Siri，更多[教程](https://dortania.github.io/OpenCore-Post-Install/universal/iservices.html#verifying-nvram)请自行爬贴，同时别忘记用脚本Clean out old attempts
 - 如果有双系统win需求，在win10下导入此注册表可解决与Mac时间不同步问题[tool.reg](https://www.jianguoyun.com/p/DWFYhFoQ_pOuCBiI1oYE)
 - 如果是高通QCA9377的无线卡，且没有更换计划可使用USB网卡，驱动[RTLWlanU BigSur.kext](https://www.jianguoyun.com/p/DUGTl18Q_pOuCBj01YYE)
-- 开启HIDPI见👇的教程，建议开启，开启后设置`1440×810`，类似Win10下缩放`125%`，字体更加清晰，同时记得在NVRAM中修改`UIScale`为02保持开机Logo大小一致
+- 开启HIDPI见👇的教程，建议开启，开启后设置`1440×810`，类似Win10下缩放`125%`，字体更加清晰，同时记得在NVRAM中修改`UIScale`为02保持开机Logo大小一致。如果在线脚本有问题，请使用离线脚本[HIDPI](https://www.jianguoyun.com/p/DTopycAQ_pOuCBiO7YcE)开启
 - 睡眠可能有问题，有待观察（ice lake 10nm）
 
 ## 更新日志
+#### 2021.08.13 修复睡眠问题+小优化
+- 此次终于解决睡眠问题，根据大佬的说法：睡眠出现唤醒内屏无显示问题（DC9/DC6错误）是因为从深度唤醒过程过于直接，添加参数修复。同时优化部分内容。（睡眠一晚掉电4%左右）
 #### 2021.08.08 更新驱动+修复小小小问题
 - 更新Intel Wifi、Bluetooth驱动至最新`V2.0.0`版本
 - 小修改使安装过程更友好
@@ -83,10 +86,14 @@
 - 驱动触控板，支持手势操作
 - 修复Windows10引导问题
 - ……
+## I5 CPU Ice Lake仿冒问题
+Loding……
+
 ## 教程&致谢
 - [OpenCore Install Guide](https://dortania.github.io/OpenCore-Install-Guide/)
 - [精解OpenCore - 黑果小兵的Blog](https://blog.daliansky.net/OpenCore-BootLoader.html)
 - [使用OpenCore引导黑苹果 - Xjn's Blog](https://blog.xjn819.com/post/opencore-guide.html)
+- [FireWlof](https://github.com/0xFireWolf/WhateverGreen)
 - [OpenCore Vanilla Guide](https://khronokernel-2.gitbook.io/opencore-vanilla-desktop-guide/)
 - [HiDPI是什么？以及黑苹果如何开HiDPI - 国光](https://www.sqlsec.com/2018/09/hidpi.html)
 - [OpenIntelWireless](https://openintelwireless.github.io/)
@@ -96,4 +103,4 @@
 
 		感谢黑果大佬们的教程及排错经验！
 ## 最后
-如果我的分享对你有帮助，可以点个Star🌟，xiexie！
+如果我的分享对你有帮助，可以点个Star🌟
