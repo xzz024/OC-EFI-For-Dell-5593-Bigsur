@@ -42,21 +42,21 @@
 
 - [x] ALC236 内部扬声器(耳机正常)
 - [x] ALC236 内部麦克风(耳机不正常)
-- [x] 所有的USB端口（如不符请自行定制）
+- [x] 所有的USB端口（如不符建议自行定制）
 - [x] 风扇调速、CPU变频 / 睡眠
 - [x] 带有手势的I2C触摸板
 - [x] 亮度调节快捷键
 - [x] Wi-Fi and Bluetooth Intel Module（AX201）
-	- [x] 跨设备复制、接力、定位服务
+	- [x] 跨设备共享剪贴板、接力、定位服务
 	- [ ] 无线随航、隔空投送
 	- [ ] Apple Watch解锁
 - [x] Realtek RTL8100 LAN 有线网卡
-- [x] 笔记本合盖睡眠`2021-08-13解决`
+- [x] 笔记本合盖睡眠唤醒`2021-08-13`
 - [x] ACPI 电池
 - [x] 从OpenCore启动Windows
 - [x] HDMI 输出
-- [x] 睡眠唤醒（ice lake 10nm）`2021-08-13解决`
-- [ ] 开机登录界面按键闪屏，与鼠标指针花屏有关（待解决）
+- [x] 深度睡眠唤醒（ice lake 10nm）`2021-08-13`
+- [ ] 开机登录界面黑屏5-7秒，按键闪屏，这是Ice Lake的通病（待解决）
 
 ## Tips*注意*：
 - 建议解锁CFG Lock，并在Kernel->Quirks 关闭 AppleCpuCfgLock 和 AppleXcpmCfgLock，获得更好的电源管理体验
@@ -69,11 +69,11 @@
 - 如果是高通QCA9377的无线卡，且没有更换计划可使用USB网卡，驱动[RTLWlanU BigSur.kext](https://www.jianguoyun.com/p/DUGTl18Q_pOuCBj01YYE)
 - 开启HIDPI见👇的教程，建议开启，开启后设置`1680×945`，类似Win10下缩放`125%`，字体更加清晰，同时记得在NVRAM中修改`UIScale`为02保持开机Logo大小一致。如果在线脚本有问题，请使用离线脚本[HIDPI](https://www.jianguoyun.com/p/DTopycAQ_pOuCBiO7YcE)开启
 - ~~睡眠可能有问题，有待观察（ice lake 10nm）~~
-- 开机登录界面按键闪屏，有待观察
+- 登录界面屏幕显示黑色故障5-7秒或任何其他屏幕显示问题(这与所有Ice Lake相关)//可能会在Monterey中被更新修复，至少现在它有不同的“症状”
 
 ## 更新日志
 #### 2021.08.13 修复睡眠问题+小优化
-- 此次终于解决睡眠问题，根据大佬的说法：睡眠出现唤醒内屏无显示问题（DC9/DC6错误）是因为从深度唤醒过程过于直接，添加参数修复。同时优化部分内容。（睡眠一晚掉电4%左右）
+- 此次终于解决睡眠问题，根据Acidanthera团队的说法：睡眠出现唤醒内屏无显示问题（DC9/DC6错误）是因为从深度唤醒过程过于直接，添加参数修复。同时优化部分内容。（睡眠一晚掉电？%左右）
 #### 2021.08.08 更新驱动+修复小小小问题
 - 更新Intel Wifi、Bluetooth驱动至最新`V2.0.0`版本
 - 小修改使安装过程更友好
@@ -99,7 +99,7 @@
 |1030G7 | 0.8Ghz |  3.5Ghz| 4✖️2 | 6M |  9W|  `0x8A51`| ✅|
 |1030G4 | 0.7Ghz | 3.5Ghz | 4✖️2 | 6M | 9W | `0x8A5C` |✅ |
 
-*Tips*目前`01005C8A`/`0200518A` 推荐使用，其他ID会造成睡眠无法唤醒等相关问题
+*Tips*目前`01005C8A`/`0200518A` 推荐使用，其他ID会造成睡眠无法唤醒等其他相关问题
 ## 教程&致谢
 - [OpenCore Install Guide](https://dortania.github.io/OpenCore-Install-Guide/)
 - [精解OpenCore - 黑果小兵的Blog](https://blog.daliansky.net/OpenCore-BootLoader.html)
