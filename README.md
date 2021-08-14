@@ -111,9 +111,11 @@
 
 **结论：在Win10下，应该算正常环境下的性能测试，可见这颗U的最终得分并不好看，在同Ice Lake架构上对比，性能略强于`Macbook Air9,2`，弱于`Macbook Pro16,3`**
 
-- 在`Bigsur 11.5.2`下：[1035G1的具体表现]()
-   - 单核[Single-Core Score]：`1049`
-   - 多核[Multi-Core Score]：`3001`
+- 在`Bigsur 11.5.2`下：[1035G1的具体表现](https://browser.geekbench.com/v5/cpu/9321385)
+   - 单核[Single-Core Score]：`1131`
+   - 多核[Multi-Core Score]：`3154`
+   - 核显[Intel(R) UHD Graphics]：`5557`[详细结果](https://browser.geekbench.com/v5/compute/3228790)
+   - 独显[NVDIA GeForce MX230]：`无法驱动`[详细结果]()
 ## 教程&致谢
 - [OpenCore Install Guide](https://dortania.github.io/OpenCore-Install-Guide/)
 - [精解OpenCore - 黑果小兵的Blog](https://blog.daliansky.net/OpenCore-BootLoader.html)
