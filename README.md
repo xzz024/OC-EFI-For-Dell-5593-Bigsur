@@ -89,8 +89,8 @@
 - ……
 ## I5 CPU Ice Lake仿冒问题
 部分参考自@FireWolf
-|CPU | 主频 |睿频|线程数|三级缓存|TDP|设备 ID|加速？|
---|--|--|--|--|--|--|--|--|--|
+|CPU | 主频 |睿频|线程数|三级缓存|TDP|设备 ID|加速?|
+|--|--|--|--|--|--|--|--|
 | 1038NG7`Pro`| 2Ghz | 3.8Ghz | 4✖️2 | 6M | 28W | `0x8A53` | ✅|
 | 1035G7| 1.2Ghz | 3.7Ghz | 4✖️2 | 6M | 15W |  `0x8A52`| ✅|
 | 1035G4| 1.1Ghz | 3.7Ghz | 4✖️2 | 6M | 15W | `0x8A5A` | ✅|
@@ -99,6 +99,7 @@
 |1030G7 | 0.8Ghz |  3.5Ghz| 4✖️2 | 6M |  9W|  `0x8A51`| ✅|
 |1030G4 | 0.7Ghz | 3.5Ghz | 4✖️2 | 6M | 9W | `0x8A5C` |✅ |
 
+*Tips*目前`01005C8A`/`0200518A` 推荐使用，其他ID会造成睡眠无法唤醒等相关问题
 ## 教程&致谢
 - [OpenCore Install Guide](https://dortania.github.io/OpenCore-Install-Guide/)
 - [精解OpenCore - 黑果小兵的Blog](https://blog.daliansky.net/OpenCore-BootLoader.html)
