@@ -114,8 +114,11 @@
 - 在`Bigsur 11.5.2`下：[1035G1的具体表现](https://browser.geekbench.com/v5/cpu/9321385)
    - 单核[Single-Core Score]：`1131`
    - 多核[Multi-Core Score]：`3154`
-   - 核显[Intel(R) UHD Graphics]：`5557`[详细结果](https://browser.geekbench.com/v5/compute/3228790)
-   - 独显[NVDIA GeForce MX230]：`无法驱动`[详细结果]()
+   - 核显[Intel(R) UHD Graphics]：`3660`[详细结果](https://browser.geekbench.com/v5/compute/3228959)//		Metal：`4060`[详细结果](https://browser.geekbench.com/v5/compute/3228984) 
+   - 独显[NVDIA GeForce MX230]：`无法驱动`[详细结果](about:blank)
+
+**结论：CPU跑分与Win10相差无几，但是核显的OpenCL跑分差距比较大，可能Mac下仿冒性能损失**
+
 ## 教程&致谢
 - [OpenCore Install Guide](https://dortania.github.io/OpenCore-Install-Guide/)
 - [精解OpenCore - 黑果小兵的Blog](https://blog.daliansky.net/OpenCore-BootLoader.html)
