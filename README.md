@@ -87,13 +87,23 @@
 - 修复Windows10引导问题
 - ……
 ## I5 CPU Ice Lake仿冒问题
-Loding……
+部分参考自@FireWolf
+|CPU | 主频 |睿频|线程数|三级缓存|TDP|设备 ID|加速？|
+--|--|--|--|--|--|--|--|--|--|
+| 1038NG7`Pro`| 2Ghz | 3.8Ghz | 4✖️2 | 6M | 28W | `0x8A53` | ✅|
+| 1035G7| 1.2Ghz | 3.7Ghz | 4✖️2 | 6M | 15W |  `0x8A52`| ✅|
+| 1035G4| 1.1Ghz | 3.7Ghz | 4✖️2 | 6M | 15W | `0x8A5A` | ✅|
+|1035G1 | 1Ghz | 3.6Ghz | 4✖️2 |6M  | 15W | `0x8A56` | ❌|
+| 1030NG7`Air`| 1.1Ghz | 3.5Ghz |4✖️2  | 6M | 10W | `0x???` |✅ |
+|1030G7 | 0.8Ghz |  3.5Ghz| 4✖️2 | 6M |  9W|  `0x8A51`| ✅|
+|1030G4 | 0.7Ghz | 3.5Ghz | 4✖️2 | 6M | 9W | `0x8A5C` |✅ |
 
 ## 教程&致谢
 - [OpenCore Install Guide](https://dortania.github.io/OpenCore-Install-Guide/)
 - [精解OpenCore - 黑果小兵的Blog](https://blog.daliansky.net/OpenCore-BootLoader.html)
-- [FireWlof](https://github.com/0xFireWolf/WhateverGreen)
+- [FireWolf](https://github.com/0xFireWolf/WhateverGreen)
 - [使用OpenCore引导黑苹果 - Xjn's Blog](https://blog.xjn819.com/post/opencore-guide.html)
+- [WhateverGreen](https://github.com/acidanthera/WhateverGreen/blob/master/Manual/FAQ.IntelHD.en.md)
 - [OpenCore Vanilla Guide](https://khronokernel-2.gitbook.io/opencore-vanilla-desktop-guide/)
 - [HiDPI是什么？以及黑苹果如何开HiDPI - 国光](https://www.sqlsec.com/2018/09/hidpi.html)
 - [OpenIntelWireless](https://openintelwireless.github.io/)
