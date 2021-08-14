@@ -100,6 +100,18 @@
 |1030G4 | 0.7Ghz | 3.5Ghz | 4✖️2 | 6M | 9W | `0x8A5C` |✅ |
 
 *Tips*目前`01005C8A`/`0200518A` 推荐使用，其他ID会造成睡眠无法唤醒等其他相关问题
+
+---
+## GeekBench5性能跑分（插电测试）
+- 在`Windows10 2009`下：[1035G1的具体表现](https://browser.geekbench.com/v5/cpu/9320463)
+   - 单核[Single-Core Score]：`1142`
+   - 多核[Multi-Core Score]：`3355`
+
+**结论：在Win10下，应该算正常环境下的性能测试，可见这颗U的最终得分并不好看，在同Ice Lake架构上，性能略强于`Macbook Air9,2`，弱于`Macbook Pro16,3`**
+
+- 在`Bigsur 11.5.2`下：[1035G1的具体表现]()
+   - 单核[Single-Core Score]：`1049`
+   - 多核[Multi-Core Score]：`3001`
 ## 教程&致谢
 - [OpenCore Install Guide](https://dortania.github.io/OpenCore-Install-Guide/)
 - [精解OpenCore - 黑果小兵的Blog](https://blog.daliansky.net/OpenCore-BootLoader.html)
