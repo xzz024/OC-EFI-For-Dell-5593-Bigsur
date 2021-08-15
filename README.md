@@ -109,7 +109,7 @@
    - 核显[Intel(R) UHD Graphics]：`5557`[详细结果](https://browser.geekbench.com/v5/compute/3228790)
    - 独显[NVDIA GeForce MX230]：`8124`[详细结果](https://browser.geekbench.com/v5/compute/3228805)
 
-**结论：在Win10下，应该算正常环境下的性能测试，可见这颗U的最终得分并不好看，在同Ice Lake架构上对比，性能略强于`Macbook Air9,2`，弱于`Macbook Pro16,3`**
+**结论：在Win10下，应该算正常环境下的性能测试，可见这颗U的最终得分并不好看，在同Ice Lake架构上对比，性能略强于`Macbook Air9,1`，弱于`Macbook Pro16,3`**
 
 - 在`Bigsur 11.5.2`下：[1035G1的具体表现](https://browser.geekbench.com/v5/cpu/9321385)
    - 单核[Single-Core Score]：`1131`
