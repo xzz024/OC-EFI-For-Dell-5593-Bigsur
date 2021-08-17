@@ -2,6 +2,8 @@
 适用于Dell灵越5593型号笔记本电脑（1035G1）。经过不懈的研究，完美度达到98%+！
 已更新OC`0.7.1`/已安装`Big Sur`11.5.2//支持macOS Monterey 12.0 Beta5
 
+![image](https://github.com/xzz024/OC7.1-EFI-For-Dell-5593-Bigsur/blob/main/ScreenShot/Dell.png)
+
 ## 我的配置
 | 硬件 | 型号 |
 |--|--|
