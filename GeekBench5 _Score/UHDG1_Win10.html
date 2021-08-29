@@ -1,0 +1,1403 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Geekbench Score</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    
+      <base href="file:///C:\Program Files (x86)\Geekbench 5\\html\" />
+    
+    <style type="text/css">/*
+  Copyright (C) 2004-2020 Primate Labs Inc.  All rights reserved.
+*/
+
+html, body, div,
+span, object, iframe,
+h1, h2, h3,
+h4, h5, h6,
+p, blockquote, pre,
+abbr, address, cite,
+code, del, dfn,
+em, img, ins,
+kbd, q, samp,
+small, strong, sub,
+sup, var, b,
+i, dl, dt,
+dd, ol, ul, l
+i, fieldset, form,
+label, legend, table,
+caption, tbody, tfoot,
+thead, tr, th,
+td, article, aside,
+dialog, figure, footer,
+header, hgroup, menu,
+nav, section, time,
+mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1.5;
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+}
+
+table, td, th {
+  vertical-align: middle;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+}
+
+blockquote, q {
+  quotes: "" "";
+}
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted rgb(0,0,0);
+  cursor: help;
+}
+
+sup, sub {
+  line-height: 0;
+  position: relative;
+  font-size: 80%;
+}
+
+sup {
+  top: -3px;
+}
+
+sub {
+  bottom: -1px;
+}
+
+/* === HTML 5 === */
+
+article, aside, dialog,
+figure, footer, header,
+hgroup, nav, section {
+  display: block;
+}
+
+/* === P.I.E. float clearing === */
+
+.clearfix:after {
+  content: " ";
+  clear: both;
+  height: 0;
+  visibility: hidden;
+  display: block;
+}
+
+.clearfix {
+  display: inline-block;
+}
+
+.clearfix {
+  display: block;
+}
+
+html{box-sizing:border-box}*,::after,::before{box-sizing:inherit}
+</style>
+    <style type="text/css">/*
+  Copyright (C) 2004-2020 Primate Labs Inc.  All rights reserved.
+*/
+
+body {
+  font-family: 'Roboto', 'Helvetica Neue', Helvetica, "Segoe UI", LucidaGrande, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.5em;
+}
+
+p {
+  margin: 0 0 1.5em 0;
+}
+
+strong {
+  font-weight: bold;
+}
+
+em, i {
+  font-style: italic;
+}
+
+/* === Containers === */
+
+.container {
+  display: block;
+  position: relative;
+  margin: 0px auto;
+  padding: 0;
+  max-width: 1400px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding: 10px 24px 16px 24px;
+  }
+}
+
+/* === Platform === */
+
+.platform-info {
+  clear: both;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 16px;
+}
+
+.platform-info .model {
+  float: left;
+}
+
+.platform-info .platform {
+  float: left;
+  /*
+    The top and bottom padding must match the top and bottom padding for
+    .validation-widget otherwise the two strings will not share a baseline.
+  */
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+.platform-info::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* === Tables === */
+
+.table-wrapper {
+  display: block;
+  width: 100%;
+  position: relative;
+  margin: 0 0 24px 0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+}
+
+.table-wrapper:last-of-type {
+    margin-bottom: 0;
+    border-bottom: 0;
+}
+
+@media (min-width: 768px) {
+
+  .table-wrapper {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+    border-radius: 4px;
+  }
+
+  .table-wrapper:last-of-type {
+      margin-bottom: 8px;
+  }
+
+}
+
+.table-wrapper-inner {
+  padding: 0;
+}
+
+.heading {
+  width: 100%;
+  display: block;
+  padding: 0;
+}
+
+.heading-bg.borderless {
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  border-bottom: 1px solid rgb(227,227,227);
+}
+
+.heading h1 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 52px;
+  padding: 0 16px;
+}
+
+@media (min-width: 768px) {
+    .heading h1 {
+      padding: 0 0;
+    }
+}
+
+
+table {
+  background-color: transparent;
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+}
+
+.table {
+  font-size: 14px;
+  border-collapse: collapse;
+  margin: 0;
+}
+
+.table, .table * th, .table * tr, .table * td {
+  border: none;
+}
+
+.table * th {
+  line-height: 1.5em;
+  padding: 8px 16px 8px 16px;
+  font-weight: bold;
+}
+
+.table * td {
+  line-height: 1.2em;
+  padding: 8px 12px 8px 12px;
+}
+
+.table .tr-no-top-border {
+    border-top: none;
+}
+
+.table .tr-no-top-border th {
+    border-radius: 4px 4px 0 0;
+}
+
+.table th.no-right-border-radius {
+    border-radius: 4px 0 0 0;
+}
+
+.table th.no-left-border-radius {
+    border-radius: 0 4px 0 0;
+}
+
+.table * tr:last-child {
+  border-bottom: none;
+}
+
+.table .name {
+  text-align: left;
+}
+
+.table .system-table {
+  display: block;
+  overflow-x: auto;
+}
+
+.system-table * .system-name {
+  width: 150px;
+  font-weight: 500;
+}
+
+.benchmark-table .name {
+  text-align: left;
+  width: 20%;
+  padding-right: 8px;
+}
+
+.benchmark-table .score {
+  text-align: right;
+  width: 20%;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.benchmark-table .graph {
+  padding-left: 8px;
+}
+
+.benchmark-table .score .description {
+  color: #aaa;
+  font-size: 90%;
+}
+
+
+.benchmark-table * .graph,
+.benchmark-table * .graph .benchmark-bar {
+  display: none;
+}
+
+.score-container,
+.score-container.battery-score {
+  float: left;
+  width: 100%;
+}
+
+.score-container .score {
+  text-align: center;
+  font-size: 40px;
+  line-height: 48px;
+  margin-top: 24px;
+  margin-bottom: 8px;
+}
+
+.score-container:last-of-type .score {
+  margin-top: 0px;
+}
+
+.compute .score-container .score {
+  margin-top: 32px;
+}
+
+ .score-container .ips {
+  text-align: center;
+  font-size: 32px;
+  line-height: 32px;
+  margin-top: 32px;
+  margin-bottom: 8px;
+}
+
+.score-container .note {
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 24px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.table th, .table td {
+  padding: 8px 16px;
+  line-height: 20px;
+  text-align: left;
+  vertical-align: top;
+}
+
+.table th {
+  font-weight: bold;
+}
+
+@media (min-width: 768px) {
+
+  .table {
+    font-size: 14px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+
+  .table thead th {
+    vertical-align: bottom;
+  }
+
+  .table caption + thead tr:first-child th,
+  .table caption + thead tr:first-child td,
+  .table colgroup + thead tr:first-child th,
+  .table colgroup + thead tr:first-child td,
+  .table thead:first-child tr:first-child th,
+  .table thead:first-child tr:first-child td {
+    border-top: 0;
+  }
+
+  .table tbody + tbody {
+    border-top: 2px solid #dddddd;
+  }
+
+  .table-striped tbody tr:nth-child(odd) td,
+  .table-striped tbody tr:nth-child(odd) th {
+    background-color: #f9f9f9;
+  }
+
+  .heading-bg.borderless {
+    left: 10px;
+    right: 8px;
+    border-left: 1px solid rgb(227,227,227);
+    border-right: 1px solid rgb(227,227,227);
+  }
+
+  .score-container {
+    float: left;
+    width: 50%;
+  }
+
+  .compute .score-container {
+    float: left;
+    width: 100%;
+  }
+
+  .score-container:last-of-type .score {
+    margin-top: 32px;
+  }
+
+	.score-container.battery-estimate {
+		float: left;
+		width: 50%;
+	}
+	.score-container.battery-actual {
+		float: left;
+		width: 100%;
+	}
+
+
+  .table.system-table {
+    display: table;
+    overflow-x: hidden;
+  }
+
+  .system-table .system-name {
+    display: table-cell;
+    width: 250px;
+  }
+
+  .benchmark-graph {
+    vertical-align: center;
+  }
+
+  .benchmark-bar {
+    background-color: #18AAF5;
+    height: 30px;
+  }
+
+  .benchmark-table .graph {
+    display: table-cell;
+    width: 60%;
+  }
+
+  .benchmark-table * .graph .benchmark-bar {
+    display: block;
+  }
+
+  .system-table, .benchmark-table, .summary-table {
+    margin-bottom: 0;
+  }
+
+  .summary-explanation {
+    font-size: 120px;
+    text-align: right;
+    margin-bottom: 10px;
+  }
+
+  .summary-table * th, .system-table * th, .benchmark-table * th, .battery-table * th {
+    padding: 12px 16px;
+    line-height: 20px;
+    font-weight: bold;
+  }
+
+  .battery-table .timestamp {
+    width: 30%;
+    text-align: left;
+  }
+
+  .battery-table .level, .battery-table .work {
+    width: 35%;
+    text-align: right;
+  }
+
+  .summary-table * td, .system-table * td, .benchmark-table * td, .battery-table * td {
+    padding: 8px 16px;
+    line-height: 1.2em;
+  }
+
+  .summary-table * th, .battery-table * th {
+    background-color: rgb(240, 240, 240);
+  }
+
+  .summary-table * .section-name {
+    width: 20%;
+  }
+
+  .summary-table * .section-score {
+    width: 15%;
+    text-align: right;
+  }
+
+  .summary-table * .section-data {
+    width: 250px;
+  }
+
+  .summary-table * .section-data .name {
+    float: left;
+    text-align: left;
+  }
+
+  .summary-table * .section-data .score {
+    float: right;
+    text-align: right;
+  }
+
+  .summary-table * td.overall-score {
+    font-family: "HelveticaNeue-Light", Arial, sans-serif;
+    text-rendering: optimizeLegibility;
+    font-size: 36pt;
+    text-align: center;
+    vertical-align: middle;
+    padding: 15px 0 10px 0;
+    line-height: 1.0em;
+  }
+
+  .battery-table {
+    width: 100%;
+  }
+
+  .battery-table thead {
+    background-color: #efefef;
+    font-weight: bold;
+  }
+
+  .validation-banner {
+    border-radius: 4px;
+  }
+}
+
+
+
+.system-value {
+  color: #75767B;
+}
+
+.thermal-table * .frequency, .thermal-table * .timestamp {
+  text-align: right;
+}
+
+.battery-table * .timestamp {
+  text-align: left;
+  width: 20%;
+}
+
+.battery-table * .work, .battery-table * .level {
+  text-align: right;
+  width: 40%;
+}
+
+
+.chart-container {
+  display: table;
+  width: 100%;
+  margin: 0 auto 10px auto;
+  position: relative;
+}
+
+.chart-wrapper {
+  display: block;
+  margin: 12px auto 18px auto;
+}
+
+.chart-scroll-screen {
+  display: table-row;
+  margin: 0;
+  padding: 10px 10px 0 10px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100px;
+  z-index: 20;
+  background: rgb(240,240,240);
+}
+
+.heading-bg {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: table-cell;
+  padding: 0;
+  padding-bottom: 10px;
+  position: fixed;
+  background: rgb(253, 253, 253);
+  z-index: 25;
+}
+
+.heading-bg.border {
+  top: 10px;
+  left: 15px;
+  right: 10px;
+  border: 1px solid rgb(227,227,227);
+}
+
+.heading-bg > .chart-wrapper {
+  display: block;
+}
+
+.heading-bg > .chart-wrapper > .chart-body {
+  margin-right: 20px;
+}
+
+.chart-header {
+  margin: 0 16px 5px 16px;
+  overflow: auto;
+}
+
+.device-left {
+  padding-top: 2px;
+  width: 60%;
+  float: left;
+}
+
+.device-right {
+  height: 48px;
+  width: 35%;
+  float: right;
+  text-align: right;
+}
+
+.device-title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.device-processor {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  color: rgb(109, 122, 134);
+  margin-bottom: 5px;
+}
+
+.device-score {
+  font-size: 28px;
+  padding-top: 10px;
+}
+
+.chart-body {
+  height: 30px;
+  position: relative;
+  margin-bottom: 10px;
+  clear: both;
+  padding-bottom: 46px;
+  display: flex;
+  width: 100%;
+}
+
+.chart-body-last {
+    border-bottom: 0;
+    margin-bottom: 0;
+    padding-bottom: 26px;
+}
+
+.segmented-chart {
+  height: 30px;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+/* === Workload Error === */
+.workload-error {
+  padding: 6px;
+  background-color: #D22D2D;
+}
+.workload-error p {
+  margin-bottom: 0;
+  color: #FFFFFF;
+  font-weight: 600;
+  text-align: center;
+}
+.table-wrapper .heading .workload-error {
+  background-color: #D22D2D !important;
+  color: #FFFFFF;
+}
+
+.table-wrapper .table tbody .data .workload-error .name,
+.table-wrapper .table tbody .data .workload-error .score {
+  color: #FFFFFF;
+}
+.table-wrapper .table tbody .workload-error .data .name .benchmark-desc,
+.table-wrapper .table tbody .workload-error .data .score .benchmark-desc {
+  color: #FFFFFF;
+}
+.table-wrapper .table tbody .workload-error .graph .benchmark-bar {
+  background-color: #FFFFFF;
+}
+
+/* === Battery Chart === */
+.battery-chart {
+  height: 100%;
+  width: 100%;
+  min-height: 400px;
+  background-color: transparent;
+}
+
+.battery-chart svg.svg {
+  height: 400px;
+}
+
+@media screen and (min-width: 768px) {
+  .battery-chart {
+    min-height: 700px;
+  }
+
+  .battery-chart svg.svg {
+    height: 700px;
+  }
+}
+
+.battery-chart .axis {
+  font-size: 12px;
+}
+
+.battery-chart .axis path,
+.battery-chart .axis line {
+  fill: none;
+  stroke: #E3E3E3;
+  shape-rendering: crispEdges;
+}
+
+.battery-chart .line {
+  fill: none;
+  stroke: #027FBF;
+  stroke-width: 4px;
+}
+
+.battery-chart .grid line {
+  stroke: lightgrey;
+  stroke-opacity: 0.7;
+  shape-rendering: crispEdges;
+}
+
+.battery-chart .grid path {
+  stroke-width: 0;
+}
+
+.chart-legend div {
+  display: inline-block;
+}
+
+.chart-legend div p {
+  display: inline-block;
+  margin: 0;
+  font-size: 12px;
+}
+
+.chart-legend #level {
+  margin: 0px 0px 10px 10px;
+}
+
+.chart-legend #cycle {
+  margin: 0px 0px 10px 0px;
+}
+
+.chart-legend #level p::before,
+.chart-legend #cycle p::before {
+  display: inline-block;
+  height: 25px;
+  width: 25px;
+  margin-right: 10px;
+  content: '';
+  vertical-align: -45%;
+}
+
+.chart-legend #level p::before {
+  background-color: #027FBF;
+}
+
+.chart-legend #cycle p::before {
+  background-color: #CCCCCC;
+  margin-left: 10px;
+}
+
+/* === Confidence Level === */
+span.confidence-level-high {
+	color: #027FBF;
+}
+
+span.confidence-level-medium {
+  color: rgb(0, 160, 0);
+}
+
+span.confidence-level-low {
+  color: rgb(255, 100, 0);
+}
+
+span.confidence-level-error {
+  color: #D22D2D;
+}
+
+/* === Battery Error Message === */
+.battery-error-message {
+	background-color: #D22D2D;
+}
+
+.battery-error-message p {
+	margin: 0;
+	padding: 0.5em 0;
+	color: #FFFFFF;
+	line-height: 2;
+	text-align: center;
+}
+
+.validation-widget {
+  font-size: 14px;
+  line-height: 1.5em;
+  border-radius: 4px;
+  display: inline-block;
+  float: right;
+  padding: 2px 8px 2px 8px;
+}
+
+.validation-banner {
+  width: 100%;
+  display: block;
+  padding: 0 0 0 0;
+  margin: 0 0 20px 0;
+}
+
+.validation-banner p {
+  padding: 12px 16px;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.validation-success {
+  background: rgb(212, 237, 218);
+  color: rgb(21, 87, 36);
+}
+
+.validation-warning {
+  background: rgb(255, 243, 205);
+  color: rgb(133, 100, 4);
+  border-color: rgb(133, 100, 4);
+}
+
+.validation-error {
+  background: rgb(248, 215, 218);
+  color: rgb(114, 28, 36);
+  border-color: rgb(114, 28, 36);
+}
+</style>
+    <style type="text/css">/* Light mode */
+body {
+  color: #2C2D30;
+  background: #F2F2F2;
+}
+
+.platform-info {
+  border-top: #D5D4D6 1px solid;
+}
+
+.table-wrapper {
+  background: rgb(253,253,253);
+  border-top: 1px solid rgba(0,0,0,0.2);
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+.heading h1 {
+  color: #2C2D30;
+}
+
+.table * th {
+  background-color: #efefef;
+}
+
+.table * tr {
+  border-top: #dfdfdf 1px solid;
+  border-bottom: #dfdfdf 1px solid;
+}
+
+.table * tr.stacked-heading th {
+  border-bottom: #C1C1C1 1px solid;
+}
+
+.benchmark-table * .data .score {
+  color: #2C2D30;
+}
+
+.score-container .score {
+  color: #2C2D30;
+}
+
+.score-container .note {
+  color: #2C2D30;
+}
+
+.table th, .table td {
+  border-top: 1px solid rgb(220, 220, 220);
+}
+
+.table th {
+  background-color: #DEDEDF;
+}
+
+.system-value {
+  color: #75767B;
+}
+
+.benchmark-desc {
+  color: #75767B;
+}
+
+.chart-body {
+  border-bottom: 1px solid #dfdfdf;
+}
+
+.segmented-chart {
+  background-color: #18AAF5;
+}
+
+@media (min-width: 768px) {
+  .table-wrapper {
+    border: 1px solid rgba(0,0,0,0.2);
+  }
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+  body {
+    color: #E3E3E3;
+    background: #1F2022;
+  }
+
+  .platform-info {
+    border-top: #575757 1px solid;
+  }
+
+  .table-wrapper {
+    background: #2D2D2D;
+    border-top: 1px solid rgba(255,255,255,0.2);
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+  }
+
+  @media (min-width: 768px) {
+    .table-wrapper {
+      border: 1px solid rgba(255,255,255,0.2);
+    }
+  }
+
+  .heading h1 {
+    color: #E3E3E3;
+  }
+
+  .table * tr {
+    border-top: #575757 1px solid;
+    border-bottom: #575757 1px solid;
+  }
+
+  .table * tr.stacked-heading th {
+    border-bottom: #575757 1px solid;
+  }
+
+  .benchmark-table * .data .score {
+    float: right;
+    text-align: right;
+    color: #A49B9B;
+  }
+
+  .benchmark-table * th.data .score {
+    color: #E3E3E3;
+  }
+
+  .score-container .score {
+    color: #E3E3E3;
+  }
+
+  .score-container .note {
+    color: #E3E3E3;
+  }
+
+  .table th, .table td {
+    border-top: 1px solid #575757;
+  }
+
+  .table th {
+    background-color: #3D3D3D;
+    font-weight: bold;
+  }
+
+  .system-value {
+    color: #A49B9B;
+  }
+
+  .benchmark-desc {
+    color: #75767B;
+  }
+
+  .chart-body {
+    border-bottom: 1px solid #575757;
+  }
+
+  .segmented-chart {
+    background-color: #18AAF5;
+  }
+}
+</style>
+  </head>
+  <body class="compute">
+    <div class="container">
+      <div class="heading">
+        <h1>Geekbench Score</h1>
+      </div>
+      <div class="table-wrapper">
+        <div class="score-container">
+          <div class="score">5557</div>
+          <div class="note">OpenCL Score</div>
+        </div>
+        <div class="platform-info">
+          <div class="platform">
+            Geekbench 5.3.0 Pro for Windows x86 (64-bit)
+          </div>
+          
+            <div class="validation-widget validation-success">
+              Valid
+            </div>
+          
+          
+          
+        </div>
+      </div>
+
+      
+
+      
+
+      
+
+      <div class="heading">
+  <h1>System Information</h1>
+</div>
+<div class="table-wrapper">
+   
+    <table class="table system-table">
+      <thead>
+        <tr>
+          <th colspan="2">System Information</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+          <tr>
+            <td class="system-name">Operating System</td>
+            <td class="system-value">Microsoft Windows 10 (64-bit)</td>
+          </tr>
+        
+          <tr>
+            <td class="system-name">Operating System</td>
+            <td class="system-value">2009</td>
+          </tr>
+        
+          <tr>
+            <td class="system-name">Model</td>
+            <td class="system-value">Dell Inc. Inspiron 5593</td>
+          </tr>
+        
+          <tr>
+            <td class="system-name">Motherboard</td>
+            <td class="system-value">Dell Inc. 0HP5Y9</td>
+          </tr>
+        
+          <tr>
+            <td class="system-name">Northbridge</td>
+            <td class="system-value">Intel Ice Lake 03</td>
+          </tr>
+        
+          <tr>
+            <td class="system-name">Southbridge</td>
+            <td class="system-value">Intel Ice Lake PCH 30</td>
+          </tr>
+        
+          <tr>
+            <td class="system-name">BIOS</td>
+            <td class="system-value">Dell Inc. 1.15.0</td>
+          </tr>
+        
+      </tbody>
+    </table>
+  
+    <table class="table system-table">
+      <thead>
+        <tr>
+          <th colspan="2">Processor Information</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+          <tr>
+            <td class="system-name">Name</td>
+            <td class="system-value">Intel Core i5-1035G1</td>
+          </tr>
+        
+          <tr>
+            <td class="system-name">Topology</td>
+            <td class="system-value">1 Processor, 4 Cores, 8 Threads</td>
+          </tr>
+        
+          <tr>
+            <td class="system-name">Identifier</td>
+            <td class="system-value">GenuineIntel Family 6 Model 126 Stepping 5</td>
+          </tr>
+        
+          <tr>
+            <td class="system-name">Base Frequency</td>
+            <td class="system-value">1.20 GHz</td>
+          </tr>
+        
+          <tr>
+            <td class="system-name">Maximum Frequency</td>
+            <td class="system-value">3.59 GHz</td>
+          </tr>
+        
+          <tr>
+            <td class="system-name">Processor Package</td>
+            <td class="system-value">Socket 1356 FCBGA</td>
+          </tr>
+        
+          <tr>
+            <td class="system-name">Processor Codename</td>
+            <td class="system-value">Ice Lake</td>
+          </tr>
+        
+          <tr>
+            <td class="system-name">L1 Instruction Cache</td>
+            <td class="system-value">32.0 KB x 4</td>
+          </tr>
+        
+          <tr>
+            <td class="system-name">L1 Data Cache</td>
+            <td class="system-value">48.0 KB x 4</td>
+          </tr>
+        
+          <tr>
+            <td class="system-name">L2 Cache</td>
+            <td class="system-value">512 KB x 4</td>
+          </tr>
+        
+          <tr>
+            <td class="system-name">L3 Cache</td>
+            <td class="system-value">6.00 MB</td>
+          </tr>
+        
+      </tbody>
+    </table>
+  
+    <table class="table system-table">
+      <thead>
+        <tr>
+          <th colspan="2">Memory Information</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+          <tr>
+            <td class="system-name">Size</td>
+            <td class="system-value">8.00 GB</td>
+          </tr>
+        
+      </tbody>
+    </table>
+  
+    <table class="table system-table">
+      <thead>
+        <tr>
+          <th colspan="2">OpenCL Information</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+          <tr>
+            <td class="system-name">Platform Vendor</td>
+            <td class="system-value">Intel(R) Corporation</td>
+          </tr>
+        
+          <tr>
+            <td class="system-name">Platform Name</td>
+            <td class="system-value">Intel(R) OpenCL</td>
+          </tr>
+        
+          <tr>
+            <td class="system-name">Device Vendor</td>
+            <td class="system-value">Intel(R) Corporation</td>
+          </tr>
+        
+          <tr>
+            <td class="system-name">Device Name</td>
+            <td class="system-value">Intel(R) UHD Graphics</td>
+          </tr>
+        
+          <tr>
+            <td class="system-name">Device Driver Version</td>
+            <td class="system-value">26.20 .100.7463</td>
+          </tr>
+        
+          <tr>
+            <td class="system-name">Maximum Frequency</td>
+            <td class="system-value">1.05 GHz</td>
+          </tr>
+        
+          <tr>
+            <td class="system-name">Compute Units</td>
+            <td class="system-value">32</td>
+          </tr>
+        
+          <tr>
+            <td class="system-name">Device Memory</td>
+            <td class="system-value">3.11 GB</td>
+          </tr>
+        
+      </tbody>
+    </table>
+  
+</div><!-- END .table-wrapper -->
+
+
+      
+        <div class="heading ">
+          <h1>OpenCL Performance</h1>
+        </div>
+        <div class="table-wrapper">
+          <table class="table benchmark-table">
+            <thead>
+              <tr class="stacked-heading">
+                <th class="name">
+                  OpenCL Score
+                </th>
+                <th class="score">
+                  5557
+                </th>
+                <th class="graph"></th>
+              </tr>
+              
+            </thead>
+            <tbody>
+              
+              <tr class="stacked-heading ">
+                <td class="name">
+                  Sobel
+                </td>
+                <td class="score">
+                  4903<br /><span class="description">1.27 Gpixels/sec</span>
+                </td>
+                <td class="graph">
+                  <div class="benchmark-bar" style="width: 15%">&nbsp;</div>
+                </td>
+              </tr>
+              
+              <tr class="stacked-heading ">
+                <td class="name">
+                  Canny
+                </td>
+                <td class="score">
+                  4112<br /><span class="description">257.4 Mpixels/sec</span>
+                </td>
+                <td class="graph">
+                  <div class="benchmark-bar" style="width: 12%">&nbsp;</div>
+                </td>
+              </tr>
+              
+              <tr class="stacked-heading ">
+                <td class="name">
+                  Stereo Matching
+                </td>
+                <td class="score">
+                  9777<br /><span class="description">13.8 Gpixels/sec</span>
+                </td>
+                <td class="graph">
+                  <div class="benchmark-bar" style="width: 30%">&nbsp;</div>
+                </td>
+              </tr>
+              
+              <tr class="stacked-heading ">
+                <td class="name">
+                  Histogram Equalization
+                </td>
+                <td class="score">
+                  4560<br /><span class="description">804.5 Mpixels/sec</span>
+                </td>
+                <td class="graph">
+                  <div class="benchmark-bar" style="width: 14%">&nbsp;</div>
+                </td>
+              </tr>
+              
+              <tr class="stacked-heading ">
+                <td class="name">
+                  Gaussian Blur
+                </td>
+                <td class="score">
+                  5284<br /><span class="description">290.4 Mpixels/sec</span>
+                </td>
+                <td class="graph">
+                  <div class="benchmark-bar" style="width: 16%">&nbsp;</div>
+                </td>
+              </tr>
+              
+              <tr class="stacked-heading ">
+                <td class="name">
+                  Depth of Field
+                </td>
+                <td class="score">
+                  12312<br /><span class="description">142.7 Mpixels/sec</span>
+                </td>
+                <td class="graph">
+                  <div class="benchmark-bar" style="width: 38%">&nbsp;</div>
+                </td>
+              </tr>
+              
+              <tr class="stacked-heading ">
+                <td class="name">
+                  Face Detection
+                </td>
+                <td class="score">
+                  2488<br /><span class="description">19.2 images/sec</span>
+                </td>
+                <td class="graph">
+                  <div class="benchmark-bar" style="width: 7%">&nbsp;</div>
+                </td>
+              </tr>
+              
+              <tr class="stacked-heading ">
+                <td class="name">
+                  Horizon Detection
+                </td>
+                <td class="score">
+                  5914<br /><span class="description">145.8 Mpixels/sec</span>
+                </td>
+                <td class="graph">
+                  <div class="benchmark-bar" style="width: 18%">&nbsp;</div>
+                </td>
+              </tr>
+              
+              <tr class="stacked-heading ">
+                <td class="name">
+                  Feature Matching
+                </td>
+                <td class="score">
+                  2332<br /><span class="description">48.2 Mpixels/sec</span>
+                </td>
+                <td class="graph">
+                  <div class="benchmark-bar" style="width: 7%">&nbsp;</div>
+                </td>
+              </tr>
+              
+              <tr class="stacked-heading ">
+                <td class="name">
+                  Particle Physics
+                </td>
+                <td class="score">
+                  31669<br /><span class="description">843.5 FPS</span>
+                </td>
+                <td class="graph">
+                  <div class="benchmark-bar" style="width: 100%">&nbsp;</div>
+                </td>
+              </tr>
+              
+              <tr class="stacked-heading ">
+                <td class="name">
+                  SFFT
+                </td>
+                <td class="score">
+                  2458<br /><span class="description">33.9 Gflops</span>
+                </td>
+                <td class="graph">
+                  <div class="benchmark-bar" style="width: 7%">&nbsp;</div>
+                </td>
+              </tr>
+              
+            </tbody>
+          </table>
+        </div> <!-- END .table-wrapper -->
+        
+    </div> <!-- END .containter -->
+  </body>
+</html>
+

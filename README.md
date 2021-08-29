@@ -1,6 +1,8 @@
 # Open Core DELL Inspiron 5593
 适用于Dell灵越5593型号笔记本电脑（1035G1）。经过不懈的研究，完美度达到98%+！
-已更新OC`0.7.1`/已安装`Big Sur`11.5.2//支持macOS Monterey 12.0 Beta5
+已更新OC`0.7.1`/已安装`Big Sur`11.5.2//支持macOS Monterey 12.0 Beta5。 
+![image](https://github.com/xzz024/OC7.1-EFI-For-Dell-5593-Bigsur/blob/main/ScreenShot/Dell.png)
+![image](http://imageproxy.chaoxing.com/0x0,q15,jpeg,s7rFk2CdBr879EOve8Bph0i2EUtMDVs4RY2_7tegnxWI/http://p.ananas.chaoxing.com/star3/origin/d8e42c9ca9427aa72460834602d92fef.png)
 
 ## 我的配置
 | 硬件 | 型号 |
@@ -36,7 +38,7 @@
 - `Security`➡️`Intel®️ SGX`（`Disabled`）
 - `Secure Boot`➡️`Enable Secure Boot`（`OFF`）
 - `Secure Boot`➡️`Secure Boot Mode`（`Deployed Mode`）
-- （非必须）`CFG Lock`解锁`Setup_Var 0x43 0x0`[BIOS解锁工具](https://www.jianguoyun.com/p/DaUvc2AQ_pOuCBj31IYE)`操作不当后果自负`
+- （非必须但推荐）`CFG Lock`解锁`Setup_Var 0x43 0x0`[BIOS解锁工具](https://www.jianguoyun.com/p/DaUvc2AQ_pOuCBj31IYE)`操作不当后果自负`
 
 ## 项目清单
 
@@ -45,7 +47,7 @@
 - [x] 所有的USB端口（如不符建议自行定制）
 - [x] 风扇调速、CPU变频 / 睡眠
 - [x] 带有手势的I2C触摸板
-- [x] 亮度调节快捷键
+- [x] 亮度调节快捷键、F10关闭/开启触控板
 - [x] Wi-Fi and Bluetooth Intel Module（AX201）
 	- [x] 跨设备共享剪贴板、接力、定位服务
 	- [ ] 无线随航、隔空投送
@@ -62,7 +64,7 @@
 - 建议解锁CFG Lock，并在Kernel->Quirks 关闭 AppleCpuCfgLock 和 AppleXcpmCfgLock，获得更好的电源管理体验
 - 本机原来无线网卡为高通 ~~Qualcomm QCA9377~~，仅蓝牙可驱动，现已更换intel ax201。如对隔空投送等有需求，建议更换`博通卡`
 - 声音、亮度调节均正常，可直接按Fx键进行调节
-- USB端口已定制，如不符合你的端口，请删除`USBPorts.kext`并自行定制
+- USB端口已定制，由于机型可能不一致，会造成不同问题，如不符合你的端口，请删除`USBPorts.kext`并自行定制
 - 支持合盖睡眠、电池电量正常
 - EFI已清空三码，请安装后注入三码，以开启iMessage、Facetime、Siri，更多[教程](https://dortania.github.io/OpenCore-Post-Install/universal/iservices.html#verifying-nvram)请自行爬贴，同时别忘记用脚本Clean out old attempts
 - 如果有双系统win需求，在win10下导入此注册表可解决与Mac时间不同步问题[tool.reg](https://www.jianguoyun.com/p/DWFYhFoQ_pOuCBiI1oYE)
@@ -73,7 +75,7 @@
 
 ## 更新日志
 #### 2021.08.13 修复睡眠问题+小优化
-- 此次终于解决睡眠问题，根据Acidanthera团队的说法：睡眠出现唤醒内屏无显示问题（DC9/DC6错误）是因为从深度唤醒过程过于直接，添加参数修复。同时优化部分内容。（睡眠一晚掉电？%左右）
+- 此次终于解决睡眠问题，根据Acidanthera团队的说法：睡眠出现唤醒内屏无显示问题（DC9/DC6错误）是因为从深度唤醒过程过于直接，添加参数修复。同时优化部分内容。（睡眠一晚掉电3%左右）
 #### 2021.08.08 更新驱动+修复小小小问题
 - 更新Intel Wifi、Bluetooth驱动至最新`V2.0.0`版本
 - 小修改使安装过程更友好
@@ -99,7 +101,26 @@
 |1030G7 | 0.8Ghz |  3.5Ghz| 4✖️2 | 6M |  9W|  `0x8A51`| ✅|
 |1030G4 | 0.7Ghz | 3.5Ghz | 4✖️2 | 6M | 9W | `0x8A5C` |✅ |
 
-*Tips*目前`01005C8A`/`0200518A` 推荐使用，其他ID会造成睡眠无法唤醒等其他相关问题
+*Tips*目前`01005C8A`/`0100528A` 推荐使用，其他ID可能会造成睡眠无法唤醒等其他相关问题
+
+---
+## GeekBench5性能跑分（插电高性能Model测试）
+- 在`Windows10 2009`下：[1035G1的具体表现](https://browser.geekbench.com/v5/cpu/9320463)
+   - 单核[Single-Core Score]：`1142`
+   - 多核[Multi-Core Score]：`3355`
+   - 核显[Intel(R) UHD Graphics]：`5557`[详细结果](https://browser.geekbench.com/v5/compute/3228790)
+   - 独显[NVDIA GeForce MX230]：`8124`[详细结果](https://browser.geekbench.com/v5/compute/3228805)
+
+**结论：在Win10下，应该算正常环境下的性能测试，可见这颗U的最终得分并不好看，在同Ice Lake架构上对比，性能略强于`Macbook Air9,1`，弱于`Macbook Pro16,3`**
+
+- 在`Bigsur 11.5.2`下：[1035G1的具体表现](https://browser.geekbench.com/v5/cpu/9335841)
+   - 单核[Single-Core Score]：`1124`
+   - 多核[Multi-Core Score]：`3222`
+   - 核显[Intel(R) UHD Graphics]：[`3660`](https://browser.geekbench.com/v5/compute/3228959)|[`3692`](https://browser.geekbench.com/v5/compute/3232168)|//		Metal：[`4060`](https://browser.geekbench.com/v5/compute/3228984) 
+   - 独显[NVDIA GeForce MX230]：`无法驱动`[详细结果](about:blank)
+
+**结论：CPU跑分与Win10相差无几，但是核显的OpenCL跑分差距比较大，可能Mac下仿冒性能损失**
+
 ## 教程&致谢
 - [OpenCore Install Guide](https://dortania.github.io/OpenCore-Install-Guide/)
 - [精解OpenCore - 黑果小兵的Blog](https://blog.daliansky.net/OpenCore-BootLoader.html)
