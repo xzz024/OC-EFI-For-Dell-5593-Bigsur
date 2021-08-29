@@ -1,6 +1,8 @@
 # Open Core DELL Inspiron 5593
 适用于Dell灵越5593型号笔记本电脑（1035G1）。经过不懈的研究，完美度达到98%+！
 已更新OC`0.7.1`/已安装`Big Sur`11.5.2//支持macOS Monterey 12.0 Beta5。 
+
+使用请点击右边👉[release](https://github.com/xzz024/OC7.1-EFI-For-Dell-5593-Bigsur/releases)，下载最新版本
 ![image](https://github.com/xzz024/OC7.1-EFI-For-Dell-5593-Bigsur/blob/main/ScreenShot/Dell.png)
 ![image](http://imageproxy.chaoxing.com/0x0,q15,jpeg,s7rFk2CdBr879EOve8Bph0i2EUtMDVs4RY2_7tegnxWI/http://p.ananas.chaoxing.com/star3/origin/d8e42c9ca9427aa72460834602d92fef.png)
 
@@ -69,11 +71,13 @@
 - EFI已清空三码，请安装后注入三码，以开启iMessage、Facetime、Siri，更多[教程](https://dortania.github.io/OpenCore-Post-Install/universal/iservices.html#verifying-nvram)请自行爬贴，同时别忘记用脚本Clean out old attempts
 - 如果有双系统win需求，在win10下导入此注册表可解决与Mac时间不同步问题[tool.reg](https://www.jianguoyun.com/p/DWFYhFoQ_pOuCBiI1oYE)
 - 如果是高通QCA9377的无线卡，且没有更换计划可使用USB网卡，驱动[RTLWlanU BigSur.kext](https://www.jianguoyun.com/p/DUGTl18Q_pOuCBj01YYE)
-- 开启HIDPI见👇的教程，建议开启，开启后设置`1680×945`，类似Win10下缩放`125%`，字体更加清晰，同时记得在NVRAM中修改`UIScale`为02保持开机Logo大小一致。如果在线脚本有问题，请使用离线脚本[HIDPI](https://www.jianguoyun.com/p/DTopycAQ_pOuCBiO7YcE)开启
+- 开启HIDPI见👇的教程，建议开启，开启后设置`1680×945`，类似Win10下缩放`125%`，字体更加清晰，同时记得在NVRAM中修改`UIScale`为02保持开机Logo大小一致。如果在线脚本有问题，请使用离线脚本[HIDPI](https://www.jianguoyun.com/p/DTopycAQ_pOuCBiO7YcE)开启(开启HIDPI，核显性能不够可能会造成部分场景不流畅的现象，请自行取舍)
 - ~~睡眠可能有问题，有待观察（ice lake 10nm）~~
 - 登录界面屏幕显示黑色故障5-7秒或任何其他屏幕显示问题(这与所有Ice Lake相关)//可能会在Monterey中被更新修复，至少现在它有不同的“症状”
 
 ## 更新日志
+#### 2021.08.29 小改动：取消部分定制内容及驱动
+- 由于部分机型配置不同，会造成安装过程出现问题，现已取消部分定制内容及驱动，同时注入临时三码，以保证安装过程顺利
 #### 2021.08.13 修复睡眠问题+小优化
 - 此次终于解决睡眠问题，根据Acidanthera团队的说法：睡眠出现唤醒内屏无显示问题（DC9/DC6错误）是因为从深度唤醒过程过于直接，添加参数修复。同时优化部分内容。（睡眠一晚掉电3%左右）
 #### 2021.08.08 更新驱动+修复小小小问题
