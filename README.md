@@ -1,7 +1,6 @@
 # Open Core DELL Inspiron 5593
 适用于Dell灵越5593型号笔记本电脑（1035G1）。经过不懈的研究，完美度达到98%+！
-已更新OC`0.7.1`/已安装`Big Sur`11.5.2//支持macOS Monterey 12.0 Beta5
-
+已更新OC`0.7.1`/已安装`Big Sur`11.5.2//支持macOS Monterey 12.0 Beta5。 
 ![image](https://github.com/xzz024/OC7.1-EFI-For-Dell-5593-Bigsur/blob/main/ScreenShot/Dell.png)
 ![image](http://imageproxy.chaoxing.com/0x0,q15,jpeg,s7rFk2CdBr879EOve8Bph0i2EUtMDVs4RY2_7tegnxWI/http://p.ananas.chaoxing.com/star3/origin/d8e42c9ca9427aa72460834602d92fef.png)
 
@@ -39,7 +38,7 @@
 - `Security`➡️`Intel®️ SGX`（`Disabled`）
 - `Secure Boot`➡️`Enable Secure Boot`（`OFF`）
 - `Secure Boot`➡️`Secure Boot Mode`（`Deployed Mode`）
-- （非必须）`CFG Lock`解锁`Setup_Var 0x43 0x0`[BIOS解锁工具](https://www.jianguoyun.com/p/DaUvc2AQ_pOuCBj31IYE)`操作不当后果自负`
+- （非必须但推荐）`CFG Lock`解锁`Setup_Var 0x43 0x0`[BIOS解锁工具](https://www.jianguoyun.com/p/DaUvc2AQ_pOuCBj31IYE)`操作不当后果自负`
 
 ## 项目清单
 
@@ -48,7 +47,7 @@
 - [x] 所有的USB端口（如不符建议自行定制）
 - [x] 风扇调速、CPU变频 / 睡眠
 - [x] 带有手势的I2C触摸板
-- [x] 亮度调节快捷键
+- [x] 亮度调节快捷键、F10关闭/开启触控板
 - [x] Wi-Fi and Bluetooth Intel Module（AX201）
 	- [x] 跨设备共享剪贴板、接力、定位服务
 	- [ ] 无线随航、隔空投送
@@ -65,7 +64,7 @@
 - 建议解锁CFG Lock，并在Kernel->Quirks 关闭 AppleCpuCfgLock 和 AppleXcpmCfgLock，获得更好的电源管理体验
 - 本机原来无线网卡为高通 ~~Qualcomm QCA9377~~，仅蓝牙可驱动，现已更换intel ax201。如对隔空投送等有需求，建议更换`博通卡`
 - 声音、亮度调节均正常，可直接按Fx键进行调节
-- USB端口已定制，如不符合你的端口，请删除`USBPorts.kext`并自行定制
+- USB端口已定制，由于机型可能不一致，会造成不同问题，如不符合你的端口，请删除`USBPorts.kext`并自行定制
 - 支持合盖睡眠、电池电量正常
 - EFI已清空三码，请安装后注入三码，以开启iMessage、Facetime、Siri，更多[教程](https://dortania.github.io/OpenCore-Post-Install/universal/iservices.html#verifying-nvram)请自行爬贴，同时别忘记用脚本Clean out old attempts
 - 如果有双系统win需求，在win10下导入此注册表可解决与Mac时间不同步问题[tool.reg](https://www.jianguoyun.com/p/DWFYhFoQ_pOuCBiI1oYE)
