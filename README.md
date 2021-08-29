@@ -24,7 +24,7 @@
 
 ## 系统截图
 <img src="https://z3.ax1x.com/2021/08/29/h8NHLn.png" width = "657" height = "436" alt="mymac" align=center />
-<img src="https://z3.ax1x.com/2021/08/08/fQqa90.png" width = "657" height = "462" alt="gpu" align=center />
+<img src="https://z3.ax1x.com/2021/08/29/h8UZWD.png" width = "657" height = "462" alt="gpu" align=center />
 <img src="https://z3.ax1x.com/2021/08/29/h8NxWF.png" width = "657" height = "482" alt="hidpi" align=center />
 <img src="https://z3.ax1x.com/2021/08/08/fQLxRx.png" width = "657" height = "454" alt="xianka" align=center />
 <img src="https://z3.ax1x.com/2021/08/08/fQOXnS.png" width = "657" height = "691" alt="usb" align=center />
