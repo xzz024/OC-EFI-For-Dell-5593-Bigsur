@@ -7,10 +7,12 @@
 ![image](http://imageproxy.chaoxing.com/0x0,q15,jpeg,s7rFk2CdBr879EOve8Bph0i2EUtMDVs4RY2_7tegnxWI/http://p.ananas.chaoxing.com/star3/origin/d8e42c9ca9427aa72460834602d92fef.png)
 
 ## 我的配置
-| 硬件 | 型号 |
+⚠️BIOS版本推荐≦1.15.0，最新BIOS版本1.16.0安装、使用会出现问题[#5](https://github.com/xzz024/OC7.1-EFI-For-Dell-5593-Bigsur/issues/5)，降级参考[Dell_BIOS降级文档](https://www.dell.com/support/kbdoc/zh-cn/000130652/在戴尔计算机上降级系统bios)
+| 硬件&BIOS | 型号 |
 |--|--|
 | 笔记本 | Dell 5593（Inspiron 16s） |
 | CPU | Intel Core I5-1035G1（UHD G1）ice lake 10nm |
+| BIOS | 1.13.0|
 | 内存 | SK Hynix 2667Mhz 8G×1|
 |SSD| TOSHIBA NVMe  512GB |
 | 独显 | Nvidia MX230（已屏蔽）|
