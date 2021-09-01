@@ -2,7 +2,11 @@
 适用于Dell灵越5593型号笔记本电脑（1035G1）。经过不懈的研究，完美度达到98%+！
 已更新OC`0.7.1`/已安装`Big Sur`11.5.2//支持macOS Monterey 12.0 Beta5。 
 
-使用请点击右边👉[release](https://github.com/xzz024/OC7.1-EFI-For-Dell-5593-Bigsur/releases)，下载最新版本
+使用请点击右边👉[release](https://github.com/xzz024/OC7.1-EFI-For-Dell-5593-Bigsur/releases)，下载最新版本，如有问题或疑问请发**Issues**
+
+## 下次更新时间及内容预告
+- 2021/10/01   将更新OC、12Monterey。可能会修复HDMI问题
+
 ![image](https://github.com/xzz024/OC7.1-EFI-For-Dell-5593-Bigsur/blob/main/ScreenShot/Dell.png)
 ![image](http://imageproxy.chaoxing.com/0x0,q15,jpeg,s7rFk2CdBr879EOve8Bph0i2EUtMDVs4RY2_7tegnxWI/http://p.ananas.chaoxing.com/star3/origin/d8e42c9ca9427aa72460834602d92fef.png)
 
