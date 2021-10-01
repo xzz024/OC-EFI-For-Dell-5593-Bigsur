@@ -1,10 +1,10 @@
 # Open Core DELL Inspiron 5593
-适用于Dell灵越5593型号笔记本电脑（1035G1）。经过不懈的研究，完美度达到98%+！
-已更新OC`0.7.1`/已安装`Big Sur`11.5.2//支持macOS Monterey 12
+适用于Dell灵越5593型号笔记本电脑（1035G1）。经过不懈的研究，完美度达到99%+！
+已更新OC正式版`0.7.3`/已安装`Big Sur`11.5.2//支持macOS Monterey 12
 ## 下载快速通道
-下载[![Download from https://github.com/xzz024/OC7.1-EFI-For-Dell-5593-Bigsur/releases](https://img.shields.io/badge/Download-V1.0.3-blue)](https://github.com/xzz024/OC7.1-EFI-For-Dell-5593-Bigsur/releases)最新版本，如有问题或疑问请发**Issues**。如果对你有帮助请Donate或点个Star支持下！
+下载[![Download from https://github.com/xzz024/OC7.1-EFI-For-Dell-5593-Bigsur/releases](https://img.shields.io/badge/Download-V1.0.4-green)](https://github.com/xzz024/OC7.1-EFI-For-Dell-5593-Bigsur/releases)最新版本，如有问题或疑问请发**Issues**。如果对你有帮助请Donate或点个Star支持下！
 ## 下次更新时间及内容预告
-- 随缘更新   将更新OC、12Monterey。可能会修复开机Logo黑屏问题
+- 随缘更新   将更新OC、12Monterey。可能会修复HDMI问题
 
 ![image](https://github.com/xzz024/OC7.1-EFI-For-Dell-5593-Bigsur/blob/main/ScreenShot/Dell.png)
 ![image](http://imageproxy.chaoxing.com/0x0,q15,jpeg,s7rFk2CdBr879EOve8Bph0i2EUtMDVs4RY2_7tegnxWI/http://p.ananas.chaoxing.com/star3/origin/d8e42c9ca9427aa72460834602d92fef.png)
@@ -62,25 +62,31 @@
 - [x] Realtek RTL8100 LAN 有线网卡
 - [x] 笔记本合盖睡眠唤醒`2021-08-13`
 - [x] ACPI 电池
-- [x] 从OpenCore启动Windows
+- [x] 从OpenCore启动Windows（不推荐）
 - [x] HDMI 输出
 - [x] 深度睡眠唤醒（ice lake 10nm）`2021-08-13`
-- [ ] 开机登录界面黑屏5-7秒，按键闪屏，这是Ice Lake的通病（待解决）
+- [x] 开机登录界面黑屏5-7秒，按键闪屏，这是Ice Lake的通病（已解决）`2021-10-01`
 
 ## Tips*注意*：
 - 建议解锁CFG Lock，并在Kernel->Quirks 关闭 AppleCpuCfgLock 和 AppleXcpmCfgLock，获得更好的电源管理体验
 - 本机原来无线网卡为高通 ~~Qualcomm QCA9377~~，仅蓝牙可驱动，现已更换intel ax201。如对隔空投送等有需求，建议更换`博通卡`
 - 声音、亮度调节均正常，可直接按Fx键进行调节
-- USB端口已定制，由于机型可能不一致，会造成不同问题，如不符合你的端口，请删除`USBPorts.kext`并自行定制
-- 支持合盖睡眠、电池电量正常
+- USB端口已定制，由于机型可能不一致，会造成不同问题，~~如不符合你的端口，请删除`USBPorts.kext`并自行定制~~不再启用USBPort.kext，自行开启或定制
+- 支持合盖睡眠、电池电量显示正常
 - EFI已清空三码，请安装后注入三码，以开启iMessage、Facetime、Siri，更多[教程](https://dortania.github.io/OpenCore-Post-Install/universal/iservices.html#verifying-nvram)请自行爬贴，同时别忘记用脚本Clean out old attempts
 - 如果有双系统win需求，在win10下导入此注册表可解决与Mac时间不同步问题[tool.reg](https://www.jianguoyun.com/p/DWFYhFoQ_pOuCBiI1oYE)
 - 如果是高通QCA9377的无线卡，且没有更换计划可使用USB网卡，驱动[RTLWlanU BigSur.kext](https://www.jianguoyun.com/p/DUGTl18Q_pOuCBj01YYE)
-- 开启HIDPI见👇的教程，建议开启，开启后设置`1680×945`，类似Win10下缩放`125%`，字体更加清晰，同时记得在NVRAM中修改`UIScale`为02保持开机Logo大小一致。如果在线脚本有问题，请使用离线脚本[HIDPI](https://www.jianguoyun.com/p/DTopycAQ_pOuCBiO7YcE)开启(开启HIDPI，核显性能不够可能会造成部分场景不流畅的现象，请自行取舍)
+- 开启HIDPI见👇的教程，建议开启，开启后设置`1680×945`，类似Win10下缩放`125%`，字体更加清晰，同时记得在NVRAM中修改`UIScale`为02保持开机Logo大小一致。如果在线脚本有问题，请使用离线脚本[HIDPI](https://www.jianguoyun.com/p/DTopycAQ_pOuCBiO7YcE)开启(开启HIDPI，核显性能不够可能会造成部分动画场景不流畅的现象，请自行取舍)
 - ~~睡眠可能有问题，有待观察（ice lake 10nm）~~
-- 登录界面屏幕显示黑色故障5-7秒或任何其他屏幕显示问题(这与所有Ice Lake相关)//可能会在Monterey中被更新修复，至少现在它有不同的“症状”
+- ~~登录界面屏幕显示黑色故障5-7秒或任何其他屏幕显示问题(这与所有Ice Lake相关)//可能会在Monterey中被更新修复，至少现在它有不同的“症状”~~
 
 ## 更新日志
+#### 2021.10.01 更新OC，驱动+小优化
+- 国庆节快乐！
+- 更新OC版本至正式版0.7.3
+- 更新添加特别WhateverGreen版本以暂时修复Ice Lake开机黑屏问题，更加接近完美
+- 全部驱动Kext更新至最新版本
+- 小优化，更加精简
 #### 2021.08.29 小改动：取消部分定制内容及驱动
 - 由于部分机型配置不同，会造成安装过程出现问题，现已取消部分定制内容及驱动，同时注入临时三码，以保证安装过程顺利
 #### 2021.08.13 修复睡眠问题+小优化
