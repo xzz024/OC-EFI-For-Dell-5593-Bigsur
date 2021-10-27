@@ -3,6 +3,8 @@
 已更新OC正式版`0.7.3`/已安装`Big Sur`11.5.2//支持macOS Monterey 12
 ## 下载快速通道
 下载[![Download from https://github.com/xzz024/OC7.1-EFI-For-Dell-5593-Bigsur/releases](https://img.shields.io/badge/Download-V1.0.4-green)](https://github.com/xzz024/OC7.1-EFI-For-Dell-5593-Bigsur/releases)最新版本，如有问题或疑问请发**Issues**。如果对你有帮助请Donate或点个Star支持下！
+
+Github加速下载：https://ghproxy.com/
 ## 下次更新时间及内容预告
 - 随缘更新   将更新OC、12Monterey。可能会修复HDMI问题
 
