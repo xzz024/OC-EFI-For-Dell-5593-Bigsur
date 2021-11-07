@@ -1,12 +1,12 @@
 # Open Core DELL Inspiron 5593
 适用于Dell灵越5593型号笔记本电脑（1035G1）。经过不懈的研究，完美度达到99%+！
-已更新OC正式版`0.7.3`/已安装`Big Sur`11.5.2//支持macOS Monterey 12
+已更新OC正式版`0.7.5`/已安装`Monterey`12正式版
 ## 下载快速通道
 下载[![Download from https://github.com/xzz024/OC7.1-EFI-For-Dell-5593-Bigsur/releases](https://img.shields.io/badge/Download-V1.0.4-green)](https://github.com/xzz024/OC7.1-EFI-For-Dell-5593-Bigsur/releases)最新版本，如有问题或疑问请发**Issues**。如果对你有帮助请Donate或点个Star支持下！
 
 Github加速下载：https://ghproxy.com/
 ## 下次更新时间及内容预告
-- 随缘更新   将更新OC、12Monterey。可能会修复HDMI问题
+- 随缘更新   将更新OC。可能会修复HDMI问题
 
 ![image](https://github.com/xzz024/OC7.1-EFI-For-Dell-5593-Bigsur/blob/main/ScreenShot/Dell.png)
 ![image](http://imageproxy.chaoxing.com/0x0,q15,jpeg,s7rFk2CdBr879EOve8Bph0i2EUtMDVs4RY2_7tegnxWI/http://p.ananas.chaoxing.com/star3/origin/d8e42c9ca9427aa72460834602d92fef.png)
@@ -22,8 +22,9 @@ Github加速下载：https://ghproxy.com/
 |SSD| TOSHIBA NVMe  512GB |
 | 独显 | Nvidia MX230（已屏蔽）|
 | 板载网卡 |Realtek RTL8106E PCI Express Fast Ethernet |
-|  无线+蓝牙| Intel AX201 WIFI6 160Mhz|
+|  无线+蓝牙| BCM 94360CS2 （白果拆机卡）|
 |  |~~Qualcomm QCA9377~~（已更换）|
+|  |~~Intel AX201 WIFI6 160Mhz~~（已更换）|
 | 声卡 |Realtek ALC 236（已支持插孔耳机） |
 | 显示器 |内置（15.6英寸） |
 |  键盘|内置 |
@@ -57,10 +58,11 @@ Github加速下载：https://ghproxy.com/
 - [x] 风扇调速、CPU变频 / 睡眠
 - [x] 带有手势的I2C触摸板
 - [x] 亮度调节快捷键、F10关闭/开启触控板
-- [x] Wi-Fi and Bluetooth Intel Module（AX201）
+- [x] ~~Wi-Fi and Bluetooth Intel Module（AX201）~~
+- [x] Broadcom 94360CS2(白果免驱拆机卡用起来确实比较完美)
 	- [x] 跨设备共享剪贴板、接力、定位服务
-	- [ ] 无线随航、隔空投送
-	- [ ] Apple Watch解锁
+	- [x] 无线随航、隔空投送
+	- [x] Apple Watch解锁
 - [x] Realtek RTL8100 LAN 有线网卡
 - [x] 笔记本合盖睡眠唤醒`2021-08-13`
 - [x] ACPI 电池
@@ -83,6 +85,11 @@ Github加速下载：https://ghproxy.com/
 - ~~登录界面屏幕显示黑色故障5-7秒或任何其他屏幕显示问题(这与所有Ice Lake相关)//可能会在Monterey中被更新修复，至少现在它有不同的“症状”~~
 
 ## 更新日志
+#### 2021.11.07 更新OC，macOS12
+- 更新OC版本至正式版0.7.5
+- 更新官方WhateverGreen版本修复Ice Lake开机黑屏问题。
+- 全部驱动Kext更新至最新版本
+- 更换BCM94360CS2白果拆机卡
 #### 2021.10.01 更新OC，驱动+小优化
 - 国庆节快乐！
 - 更新OC版本至正式版0.7.3
