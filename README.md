@@ -1,6 +1,6 @@
 # Open Core DELL Inspiron 5593
 适用于Dell灵越5593型号笔记本电脑（1035G1）。经过不懈的研究，完美度达到99%+！
-已更新OC正式版`0.7.5`/已安装`Monterey`12正式版
+已更新OC正式版`0.7.5`/已安装`Monterey`12正式版/更换免驱卡BCM 94360cs2更加接近完美
 ## 下载快速通道
 下载[![Download from https://github.com/xzz024/OC7.1-EFI-For-Dell-5593-Bigsur/releases](https://img.shields.io/badge/Download-V1.0.4-green)](https://github.com/xzz024/OC7.1-EFI-For-Dell-5593-Bigsur/releases)最新版本，如有问题或疑问请发**Issues**。如果对你有帮助请Donate或点个Star支持下！
 
@@ -59,7 +59,7 @@ Github加速下载：https://ghproxy.com/
 - [x] 带有手势的I2C触摸板
 - [x] 亮度调节快捷键、F10关闭/开启触控板
 - [x] ~~Wi-Fi and Bluetooth Intel Module（AX201）~~
-- [x] Broadcom 94360CS2(白果免驱拆机卡用起来确实比较完美)
+- [x] Broadcom 94360CS2(白果免驱拆机卡用起来确实比较完美，有Apple生态需求建议更换)
 	- [x] 跨设备共享剪贴板、接力、定位服务
 	- [x] 无线随航、隔空投送
 	- [x] Apple Watch解锁
@@ -73,7 +73,7 @@ Github加速下载：https://ghproxy.com/
 
 ## Tips*注意*：
 - 建议解锁CFG Lock，并在Kernel->Quirks 关闭 AppleCpuCfgLock 和 AppleXcpmCfgLock，获得更好的电源管理体验
-- 本机原来无线网卡为高通 ~~Qualcomm QCA9377~~，仅蓝牙可驱动，现已更换intel ax201。如对隔空投送等有需求，建议更换`博通卡`
+- 本机原来无线网卡为高通 ~~Qualcomm QCA9377~~，仅蓝牙可驱动，~~现已更换intel ax201~~。现已更换BCM 94360cs2，如有Apple生态有需求，建议更换`博通卡`
 - 声音、亮度调节均正常，可直接按Fx键进行调节
 - USB端口已定制，由于机型可能不一致，会造成不同问题，~~如不符合你的端口，请删除`USBPorts.kext`并自行定制~~不再启用USBPort.kext，自行开启或定制
 - 支持合盖睡眠、电池电量显示正常
@@ -89,7 +89,7 @@ Github加速下载：https://ghproxy.com/
 - 更新OC版本至正式版0.7.5
 - 更新官方WhateverGreen版本修复Ice Lake开机黑屏问题。
 - 全部驱动Kext更新至最新版本
-- 更换BCM94360CS2白果拆机卡
+- 更换BCM94360CS2白果免驱拆机卡
 #### 2021.10.01 更新OC，驱动+小优化
 - 国庆节快乐！
 - 更新OC版本至正式版0.7.3
