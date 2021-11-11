@@ -48,9 +48,10 @@ Github加速下载：https://ghproxy.com/
 不一一展示，如有生态需求的，网卡早换早享受。无Apple设备只要求上网，Intel或USB网卡均可
 
 ## 硬件截图
-**Dell5593**--15.6英寸：转接卡+`BCM94360CS2`（注意转接板的螺丝需要用**绝缘纸**盖住，否则会导致网卡背面短路无法开机!）
+**Dell5593**--15.6英寸：转接卡+`BCM94360CS2`（注意转接板的螺丝需要用**绝缘纸**盖住，否则会导致网卡背面短路无法开机!）     
+【挡的铁块需要用硬力向左掰开一点，这样刚好合适】
 
-
+<img src="https://github.com/xzz024/OC7.1-EFI-For-Dell-5593-Bigsur/blob/main/ScreenShot/转接卡.JPG" width = "657" height = "876" alt="OCStart" align=center />
 <img src="https://github.com/xzz024/OC7.1-EFI-For-Dell-5593-Bigsur/blob/main/ScreenShot/bcm94360.JPG" width = "657" height = "492" alt="OCStart" align=center />
 
 
