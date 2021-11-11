@@ -44,7 +44,8 @@ Github加速下载：https://ghproxy.com/
 <img src="https://github.com/xzz024/OC7.1-EFI-For-Dell-5593-Bigsur/blob/main/ScreenShot/IMG_1921.JPG" width = "657" height = "462" alt="wifi" align=center />
 <img src="https://z3.ax1x.com/2021/08/08/fQv1Te.png" width = "657" height = "370" alt="OCStart" align=center />
 <img src="https://github.com/xzz024/OC7.1-EFI-For-Dell-5593-Bigsur/blob/main/ScreenShot/接力WATCH.png" width = "187" height = "168" alt="OCStart" align=center />
-如有生态需求的，网卡早换早享受。无Apple设备只要求上网，Intel或USB网卡均可
+<img src="https://github.com/xzz024/OC7.1-EFI-For-Dell-5593-Bigsur/blob/main/ScreenShot/Watch解锁.JPG" width = "368" height = "448" alt="OCStart" align=center />
+不一一展示，如有生态需求的，网卡早换早享受。无Apple设备只要求上网，Intel或USB网卡均可
 
 ## 硬件截图
 **Dell5593**--15.6英寸：转接卡+`BCM94360CS2`（注意转接板的螺丝需要用**绝缘纸**盖住，否则会导致网卡背面短路无法开机!）
