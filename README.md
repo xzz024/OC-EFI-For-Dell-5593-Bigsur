@@ -2,9 +2,12 @@
 适用于Dell灵越5593型号笔记本电脑（1035G1）。经过不懈的研究，完美度达到99%+！
 
 
-已更新OC正式版`0.7.5`/已安装`Monterey`12正式版/更换免驱卡BCM 94360cs2更加接近完美（Apple生态体验）
+已更新OC正式版`0.7.5`/已安装`Monterey`12正式版/更换免驱卡**BCM 94360cs2**更加接近完美（Apple生态体验），硬件安装图见下
+
+图片较多，由于大陆网络DNS污染，可能会有图片加载不全的情况，建议KX上网浏览
 ## 下载快速通道
 下载[![Download from https://github.com/xzz024/OC7.1-EFI-For-Dell-5593-Bigsur/releases](https://img.shields.io/badge/Download-V1.0.4-green)](https://github.com/xzz024/OC7.1-EFI-For-Dell-5593-Bigsur/releases)最新版本，如有问题或疑问请发**Issues**。如果对你有帮助请Donate或点个Star支持下！
+
 
 Github加速下载：https://ghproxy.com/
 ## 下次更新时间及内容预告
@@ -40,6 +43,15 @@ Github加速下载：https://ghproxy.com/
 <img src="https://z3.ax1x.com/2021/08/08/fQOXnS.png" width = "657" height = "691" alt="usb" align=center />
 <img src="https://github.com/xzz024/OC7.1-EFI-For-Dell-5593-Bigsur/blob/main/ScreenShot/IMG_1921.JPG" width = "657" height = "462" alt="wifi" align=center />
 <img src="https://z3.ax1x.com/2021/08/08/fQv1Te.png" width = "657" height = "370" alt="OCStart" align=center />
+<img src="https://github.com/xzz024/OC7.1-EFI-For-Dell-5593-Bigsur/blob/main/ScreenShot/接力WATCH.png" width = "187" height = "168" alt="OCStart" align=center />
+如有生态需求的，网卡早换早享受。无Apple设备只要求上网，Intel或USB网卡均可
+
+## 硬件截图
+**Dell5593**--15.6英寸：转接卡+`BCM94360CS2`（注意转接板的螺丝需要用**绝缘纸**盖住，否则会导致网卡背面短路无法开机!）
+
+
+<img src="https://github.com/xzz024/OC7.1-EFI-For-Dell-5593-Bigsur/blob/main/ScreenShot/bcm94360.JPG" width = "657" height = "492" alt="OCStart" align=center />
+
 
 ## BIOS设置-5593
 - `System Configuration`➡️`SATA Operation`（`AHCI`）
