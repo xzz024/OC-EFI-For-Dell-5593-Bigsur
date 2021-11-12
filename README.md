@@ -40,12 +40,12 @@ Github加速下载：https://ghproxy.com/
 |  鼠标| 罗技M590|
 
 ## 系统截图
-<img src="https://z3.ax1x.com/2021/08/29/h8NHLn.png" width = "657" height = "436" alt="mymac" align=center />
+<img src="https://github.com/xzz024/OC7.1-EFI-For-Dell-5593-Bigsur/blob/main/ScreenShot/macos12.png" width = "657" height = "436" alt="mymac" align=center />
 <img src="https://z3.ax1x.com/2021/08/29/h8UZWD.png" width = "657" height = "462" alt="gpu" align=center />
 <img src="https://z3.ax1x.com/2021/08/29/h8NxWF.png" width = "657" height = "482" alt="hidpi" align=center />
 <img src="https://z3.ax1x.com/2021/08/08/fQLxRx.png" width = "657" height = "454" alt="xianka" align=center />
 <img src="https://z3.ax1x.com/2021/08/08/fQOXnS.png" width = "657" height = "691" alt="usb" align=center />
-<img src="https://github.com/xzz024/OC7.1-EFI-For-Dell-5593-Bigsur/blob/main/ScreenShot/IMG_1921.JPG" width = "657" height = "462" alt="wifi" align=center />
+<img src="https://github.com/xzz024/OC7.1-EFI-For-Dell-5593-Bigsur/blob/main/ScreenShot/wifi012.png" width = "657" height = "462" alt="wifi" align=center />
 <img src="https://z3.ax1x.com/2021/08/08/fQv1Te.png" width = "657" height = "370" alt="OCStart" align=center />
 <img src="https://github.com/xzz024/OC7.1-EFI-For-Dell-5593-Bigsur/blob/main/ScreenShot/接力WATCH.png" width = "187" height = "168" alt="OCStart" align=center />
 <img src="https://github.com/xzz024/OC7.1-EFI-For-Dell-5593-Bigsur/blob/main/ScreenShot/Watch解锁.JPG" width = "368" height = "448" alt="OCStart" align=center />
