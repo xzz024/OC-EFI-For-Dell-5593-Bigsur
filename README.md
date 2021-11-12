@@ -1,10 +1,14 @@
 # Open Core DELL Inspiron 5593
-适用于Dell灵越5593型号笔记本电脑（1035G1）。经过不懈的研究，完美度达到99%+！
-
+适用于Dell灵越5593型号笔记本电脑（1035G1）。经过不懈的研究，完美度达到99%+！   
 
 已更新OC正式版`0.7.5`/已安装`Monterey`12正式版/更换免驱卡**BCM 94360cs2**更加接近完美（Apple生态体验），硬件安装图见下
 
 图片较多，由于大陆网络DNS污染，可能会有图片加载不全的情况，建议KX上网浏览
+## 国内镜像加速加载
+*不推荐，内容更新可能延迟*
+
+[![Download from https://hub.fastgit.org/xzz024/OC7.1-EFI-For-Dell-5593-Bigsur](https://img.shields.io/badge/%E9%95%9C%E5%83%8F%E5%8A%A0%E9%80%9F%E6%B5%8F%E8%A7%88-%E6%96%B9%E5%BC%8F1-blue)](https://hub.fastgit.org/xzz024/OC7.1-EFI-For-Dell-5593-Bigsur)    
+[![Download from https://github.com.cnpmjs.org/xzz024/OC7.1-EFI-For-Dell-5593-Bigsur](https://img.shields.io/badge/%E9%95%9C%E5%83%8F%E5%8A%A0%E9%80%9F%E6%B5%8F%E8%A7%88-%E6%96%B9%E5%BC%8F2-red)](https://github.com.cnpmjs.org/xzz024/OC7.1-EFI-For-Dell-5593-Bigsur)
 ## 下载快速通道
 下载[![Download from https://github.com/xzz024/OC7.1-EFI-For-Dell-5593-Bigsur/releases](https://img.shields.io/badge/Download-V1.0.4-green)](https://github.com/xzz024/OC7.1-EFI-For-Dell-5593-Bigsur/releases)最新版本，如有问题或疑问请发**Issues**。如果对你有帮助请Donate或点个Star支持下！
 
