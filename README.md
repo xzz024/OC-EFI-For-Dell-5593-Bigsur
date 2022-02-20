@@ -3,23 +3,23 @@
 
 已更新OC正式版`0.7.8`/已安装`Monterey`12正式版/更换免驱卡**BCM 94360cs2**更加接近完美（Apple生态体验），硬件安装图见下 
 
-建议8G机子再添加一根**8G**内存条组成双通道，详情见下
+建议8G机子再添加一根**8G**内存条组成双通道，将极大改善使用体验，详情见下
 
 图片较多，由于大陆网络DNS污染，可能会有图片加载不全的情况
-## 国内镜像加速加载
+## 国内镜像加速加载【不稳定】
 *不推荐，内容更新可能延迟，请勿在加速网页输入账户密码登录*
 
-[![Download from https://hub.fastgit.org/xzz024/OC7.1-EFI-For-Dell-5593-Bigsur](https://img.shields.io/badge/%E9%95%9C%E5%83%8F%E5%8A%A0%E9%80%9F%E6%B5%8F%E8%A7%88-%E6%96%B9%E5%BC%8F1-blue)](https://hub.fastgit.org/xzz024/OC7.1-EFI-For-Dell-5593-Bigsur)    
+[![Download from https://hub.fastgit.org/xzz024/OC7.1-EFI-For-Dell-5593-Bigsur](https://img.shields.io/badge/%E9%95%9C%E5%83%8F%E5%8A%A0%E9%80%9F%E6%B5%8F%E8%A7%88-%E6%96%B9%E5%BC%8F1-blue)](https://hub.fastgit.xyz/xzz024/OC7.1-EFI-For-Dell-5593-Bigsur)    
 [![Download from https://github.com.cnpmjs.org/xzz024/OC7.1-EFI-For-Dell-5593-Bigsur](https://img.shields.io/badge/%E9%95%9C%E5%83%8F%E5%8A%A0%E9%80%9F%E6%B5%8F%E8%A7%88-%E6%96%B9%E5%BC%8F2-red)](https://github.com.cnpmjs.org/xzz024/OC7.1-EFI-For-Dell-5593-Bigsur)[该加速网站被标记！]
 ## 下载快速通道
-下载[![Download from https://github.com/xzz024/OC7.1-EFI-For-Dell-5593-Bigsur/releases](https://img.shields.io/badge/Download-V1.0.5-green)](https://github.com/xzz024/OC7.1-EFI-For-Dell-5593-Bigsur/releases)最新版本，如有问题或疑问请发**Issues**。如果对你有帮助请Donate或点个Star支持下！
+下载[![Download from https://github.com/xzz024/OC7.1-EFI-For-Dell-5593-Bigsur/releases](https://img.shields.io/badge/Download-V1.0.6-green)](https://github.com/xzz024/OC7.1-EFI-For-Dell-5593-Bigsur/releases)最新版本，如有问题或疑问请发**Issues**。如果对你有帮助请Donate或点个Star支持下！
 
 
 Github加速下载：https://ghproxy.com/
 ## 下次更新时间及内容预告
 - OC更新维护【目前使用起来已经非常稳定，不再频繁更新】
 
-![image](https://github.com/xzz024/OC7.1-EFI-For-Dell-5593-Bigsur/blob/main/ScreenShot/Dell.png)
+![image](https://s4.ax1x.com/2022/02/20/HOCeaV.png)
 
 ## 我的配置
 ⚠️BIOS版本推荐≦1.15.0，最新BIOS版本1.16.0安装、使用会出现问题[#5](https://github.com/xzz024/OC7.1-EFI-For-Dell-5593-Bigsur/issues/5)，降级参考[Dell_BIOS降级文档](https://www.dell.com/support/kbdoc/zh-cn/000130652/在戴尔计算机上降级系统bios)
@@ -27,7 +27,7 @@ Github加速下载：https://ghproxy.com/
 |--|--|
 | 笔记本 | Dell 5593（Inspiron 16s） |
 | CPU | Intel Core I5-1035G1（UHD G1）ice lake 10nm |
-| BIOS | 1.13.0|
+| BIOS | 1.14.0|
 | 内存 | SK Hynix 2667Mhz 8G×2|
 |SSD| TOSHIBA NVMe  512GB |
 | 独显 | Nvidia MX230（已屏蔽）|
@@ -41,9 +41,9 @@ Github加速下载：https://ghproxy.com/
 |  鼠标| 罗技M590|
 
 ## 系统截图
-<img src="https://github.com/xzz024/OC7.1-EFI-For-Dell-5593-Bigsur/blob/main/ScreenShot/NEWDELL.png" width = "657" height = "436" alt="mymac" align=center />
-<img src="https://github.com/xzz024/OC7.1-EFI-For-Dell-5593-Bigsur/blob/main/ScreenShot/gpu03.png" width = "657" height = "462" alt="gpu" align=center />
-<img src="https://github.com/xzz024/OC7.1-EFI-For-Dell-5593-Bigsur/blob/main/ScreenShot/hidpi03.png" width = "657" height = "421" alt="hidpi" align=center />
+<img src="https://s4.ax1x.com/2022/02/20/HOCtIK.png" width = "657" height = "436" alt="mymac" align=center />
+<img src="https://s4.ax1x.com/2022/02/20/HOC6dP.png" width = "657" height = "462" alt="gpu" align=center />
+<img src="https://s4.ax1x.com/2022/02/20/HOCyZt.png" width = "657" height = "421" alt="hidpi" align=center />
 <img src="https://z3.ax1x.com/2021/08/08/fQLxRx.png" width = "657" height = "454" alt="xianka" align=center />
 <img src="https://z3.ax1x.com/2021/08/08/fQOXnS.png" width = "657" height = "691" alt="usb" align=center />
 <img src="https://github.com/xzz024/OC7.1-EFI-For-Dell-5593-Bigsur/blob/main/ScreenShot/wifi012.png" width = "657" height = "462" alt="wifi" align=center />
@@ -64,14 +64,14 @@ Github加速下载：https://ghproxy.com/
 ### 2.添加8G内存条组成双通道
 添加前：【8GB】
 
-<img src="https://github.com/xzz024/OC7.1-EFI-For-Dell-5593-Bigsur/blob/main/ScreenShot/before.png" width = "657" height = "767" alt="OCStart" align=center />
+<img src="https://s4.ax1x.com/2022/02/20/HOCILn.png" width = "657" height = "767" alt="OCStart" align=center />
 
 添加后：【16GB】
 
-<img src="https://github.com/xzz024/OC7.1-EFI-For-Dell-5593-Bigsur/blob/main/ScreenShot/after.png" width = "657" height = "820" alt="OCStart" align=center />
+<img src="https://s4.ax1x.com/2022/02/20/HOC7d0.png" width = "657" height = "820" alt="OCStart" align=center />
 
-总之，Macos12比Windows更加吃内存，如果经常使用Windows可以不加。在Macos12上多开软件或者长时间不重启很容易内存不足而启用速率低的虚拟内存，从而造成卡顿现象。
-经常使用macOS的建议加内存，对核显也有一定的提升。
+总之，Macos12比Windows更加吃内存，如果经常使用Windows，macos用来玩可以不加。在Macos12上多开软件或长时间不重启很容易内存不足，而启用速率低的虚拟内存来补充，从而造成卡顿现象。
+经常使用macOS的建议加内存，不仅对核显有一定的提升，双通道对整机都有提升。
 
 ## BIOS设置-5593
 - `System Configuration`➡️`SATA Operation`（`AHCI`）
