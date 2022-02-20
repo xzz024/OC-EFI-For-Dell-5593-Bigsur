@@ -12,7 +12,7 @@
 [![Download from https://hub.fastgit.org/xzz024/OC7.1-EFI-For-Dell-5593-Bigsur](https://img.shields.io/badge/%E9%95%9C%E5%83%8F%E5%8A%A0%E9%80%9F%E6%B5%8F%E8%A7%88-%E6%96%B9%E5%BC%8F1-blue)](https://hub.fastgit.org/xzz024/OC7.1-EFI-For-Dell-5593-Bigsur)    
 [![Download from https://github.com.cnpmjs.org/xzz024/OC7.1-EFI-For-Dell-5593-Bigsur](https://img.shields.io/badge/%E9%95%9C%E5%83%8F%E5%8A%A0%E9%80%9F%E6%B5%8F%E8%A7%88-%E6%96%B9%E5%BC%8F2-red)](https://github.com.cnpmjs.org/xzz024/OC7.1-EFI-For-Dell-5593-Bigsur)[该加速网站被标记！]
 ## 下载快速通道
-下载[![Download from https://github.com/xzz024/OC7.1-EFI-For-Dell-5593-Bigsur/releases](https://img.shields.io/badge/Download-V1.0.5-green)](https://github.com/xzz024/OC7.1-EFI-For-Dell-5593-Bigsur/releases)最新版本，如有问题或疑问请发**Issues**。如果对你有帮助请Donate或点个Star支持下！
+下载[![Download from https://github.com/xzz024/OC7.1-EFI-For-Dell-5593-Bigsur/releases](https://img.shields.io/badge/Download-V1.0.6-green)](https://github.com/xzz024/OC7.1-EFI-For-Dell-5593-Bigsur/releases)最新版本，如有问题或疑问请发**Issues**。如果对你有帮助请Donate或点个Star支持下！
 
 
 Github加速下载：https://ghproxy.com/
