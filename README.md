@@ -17,7 +17,7 @@
 
 Github加速下载：https://ghproxy.com/
 ## 下次更新时间及内容预告
-- 一年后   OC更新维护
+- OC更新维护【目前使用起来已经非常稳定，不再频繁更新】
 
 ![image](https://github.com/xzz024/OC7.1-EFI-For-Dell-5593-Bigsur/blob/main/ScreenShot/Dell.png)
 
