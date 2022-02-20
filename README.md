@@ -27,7 +27,7 @@ Github加速下载：https://ghproxy.com/
 |--|--|
 | 笔记本 | Dell 5593（Inspiron 16s） |
 | CPU | Intel Core I5-1035G1（UHD G1）ice lake 10nm |
-| BIOS | 1.13.0|
+| BIOS | 1.14.0|
 | 内存 | SK Hynix 2667Mhz 8G×2|
 |SSD| TOSHIBA NVMe  512GB |
 | 独显 | Nvidia MX230（已屏蔽）|
