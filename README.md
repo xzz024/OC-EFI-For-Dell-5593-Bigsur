@@ -1,7 +1,9 @@
 # Open Core DELL Inspiron 5593
 适用于Dell灵越5593型号笔记本电脑（1035G1）。经过不懈的研究，完美度达到99%+！   
 
-已更新OC正式版`0.7.5`/已安装`Monterey`12正式版/更换免驱卡**BCM 94360cs2**更加接近完美（Apple生态体验），硬件安装图见下
+已更新OC正式版`0.7.8`/已安装`Monterey`12正式版/更换免驱卡**BCM 94360cs2**更加接近完美（Apple生态体验），硬件安装图见下 
+
+建议8G机子再添加一根**8G**内存条组成双通道，详情见下
 
 图片较多，由于大陆网络DNS污染，可能会有图片加载不全的情况
 ## 国内镜像加速加载
@@ -15,10 +17,9 @@
 
 Github加速下载：https://ghproxy.com/
 ## 下次更新时间及内容预告
-- 随缘更新   将更新OC。可能会修复HDMI问题
+- OC更新维护【目前使用起来已经非常稳定，不再频繁更新】
 
 ![image](https://github.com/xzz024/OC7.1-EFI-For-Dell-5593-Bigsur/blob/main/ScreenShot/Dell.png)
-![image](http://imageproxy.chaoxing.com/0x0,q15,jpeg,s7rFk2CdBr879EOve8Bph0i2EUtMDVs4RY2_7tegnxWI/http://p.ananas.chaoxing.com/star3/origin/d8e42c9ca9427aa72460834602d92fef.png)
 
 ## 我的配置
 ⚠️BIOS版本推荐≦1.15.0，最新BIOS版本1.16.0安装、使用会出现问题[#5](https://github.com/xzz024/OC7.1-EFI-For-Dell-5593-Bigsur/issues/5)，降级参考[Dell_BIOS降级文档](https://www.dell.com/support/kbdoc/zh-cn/000130652/在戴尔计算机上降级系统bios)
@@ -27,7 +28,7 @@ Github加速下载：https://ghproxy.com/
 | 笔记本 | Dell 5593（Inspiron 16s） |
 | CPU | Intel Core I5-1035G1（UHD G1）ice lake 10nm |
 | BIOS | 1.13.0|
-| 内存 | SK Hynix 2667Mhz 8G×1|
+| 内存 | SK Hynix 2667Mhz 8G×2|
 |SSD| TOSHIBA NVMe  512GB |
 | 独显 | Nvidia MX230（已屏蔽）|
 | 板载网卡 |Realtek RTL8106E PCI Express Fast Ethernet |
@@ -40,9 +41,9 @@ Github加速下载：https://ghproxy.com/
 |  鼠标| 罗技M590|
 
 ## 系统截图
-<img src="https://github.com/xzz024/OC7.1-EFI-For-Dell-5593-Bigsur/blob/main/ScreenShot/macos12.png" width = "657" height = "436" alt="mymac" align=center />
-<img src="https://z3.ax1x.com/2021/08/29/h8UZWD.png" width = "657" height = "462" alt="gpu" align=center />
-<img src="https://z3.ax1x.com/2021/08/29/h8NxWF.png" width = "657" height = "482" alt="hidpi" align=center />
+<img src="https://github.com/xzz024/OC7.1-EFI-For-Dell-5593-Bigsur/blob/main/ScreenShot/NEWDELL.png" width = "657" height = "436" alt="mymac" align=center />
+<img src="https://github.com/xzz024/OC7.1-EFI-For-Dell-5593-Bigsur/blob/main/ScreenShot/gpu03.png" width = "657" height = "462" alt="gpu" align=center />
+<img src="https://github.com/xzz024/OC7.1-EFI-For-Dell-5593-Bigsur/blob/main/ScreenShot/hidpi03.png" width = "657" height = "421" alt="hidpi" align=center />
 <img src="https://z3.ax1x.com/2021/08/08/fQLxRx.png" width = "657" height = "454" alt="xianka" align=center />
 <img src="https://z3.ax1x.com/2021/08/08/fQOXnS.png" width = "657" height = "691" alt="usb" align=center />
 <img src="https://github.com/xzz024/OC7.1-EFI-For-Dell-5593-Bigsur/blob/main/ScreenShot/wifi012.png" width = "657" height = "462" alt="wifi" align=center />
@@ -51,13 +52,26 @@ Github加速下载：https://ghproxy.com/
 <img src="https://github.com/xzz024/OC7.1-EFI-For-Dell-5593-Bigsur/blob/main/ScreenShot/Watch解锁.JPG" width = "368" height = "448" alt="OCStart" align=center />
 还有无线随航、剪贴板等等功能不一一展示，如有生态需求的，网卡早换早享受。手上目前无Apple设备只要求上网的，Intel或USB网卡均可
 
-## 硬件截图
+## 硬件建议
+### 1.更换白果拆机卡
 **Dell5593**--15.6英寸：转接卡+`BCM94360CS2`（注意转接板的螺丝需要用**绝缘纸**盖住，否则会导致网卡背面短路无法开机!）     
 【挡的铁块需要用硬力向左掰开一点，这样刚好合适】
 
 <img src="https://github.com/xzz024/OC7.1-EFI-For-Dell-5593-Bigsur/blob/main/ScreenShot/转接卡.JPG" width = "657" height = "876" alt="OCStart" align=center />
 <img src="https://github.com/xzz024/OC7.1-EFI-For-Dell-5593-Bigsur/blob/main/ScreenShot/bcm94360.JPG" width = "657" height = "492" alt="OCStart" align=center />
 
+
+### 2.添加8G内存条组成双通道
+添加前：【8GB】
+
+<img src="https://github.com/xzz024/OC7.1-EFI-For-Dell-5593-Bigsur/blob/main/ScreenShot/before.png" width = "657" height = "767" alt="OCStart" align=center />
+
+添加后：【16GB】
+
+<img src="https://github.com/xzz024/OC7.1-EFI-For-Dell-5593-Bigsur/blob/main/ScreenShot/after.png" width = "657" height = "820" alt="OCStart" align=center />
+
+总之，Macos12比Windows更加吃内存，如果经常使用Windows可以不加。在Macos12上多开软件或者长时间不重启很容易内存不足而启用速率低的虚拟内存，从而造成卡顿现象。
+经常使用macOS的建议加内存，对核显也有一定的提升。
 
 ## BIOS设置-5593
 - `System Configuration`➡️`SATA Operation`（`AHCI`）
@@ -103,8 +117,16 @@ Github加速下载：https://ghproxy.com/
 - 开启HIDPI见👇的教程，建议开启，开启时建议设置`1536×864`，类似Win10下缩放`125%`，**（115%【1680×945】、125%【1536×864】、135%【1440×810】、150%【1280×720】）** 字体更加清晰，同时记得在NVRAM中修改`UIScale`为02保持开机Logo大小一致。如果在线脚本有问题，请使用离线脚本[HIDPI](https://www.jianguoyun.com/p/DTopycAQ_pOuCBiO7YcE)开启(开启HIDPI，核显性能不够可能会造成部分动画场景不流畅的现象，请自行取舍)
 - ~~睡眠可能有问题，有待观察（ice lake 10nm）~~
 - ~~登录界面屏幕显示黑色故障5-7秒或任何其他屏幕显示问题(这与所有Ice Lake相关)//可能会在Monterey中被更新修复，至少现在它有不同的“症状”~~
+- 建议再添加一个8G内存组成双通道，无论对核显都有一定的提升，此外，Macos12相比Windows更加吃内存，而且在多开软件时8G内存明显有迟滞卡顿感（物理存储不足，虚拟内存补充），而16G内存则非常轻松。
 
 ## 更新日志
+#### 2022.02.20 更新OC，macOS12，添加内存
+- 更新OC版本至正式版0.7.8
+- 全部驱动Kext更新至最新官方版本
+- 亮度调节更加丝滑
+- 不再附带补丁，请自行定制USB！+注入正确三码
+- 调整OC参数，小小优化
+- 硬件：添加内存条8G
 #### 2021.11.07 更新OC，macOS12
 - 更新OC版本至正式版0.7.5
 - 更新官方WhateverGreen版本修复Ice Lake开机黑屏问题。
