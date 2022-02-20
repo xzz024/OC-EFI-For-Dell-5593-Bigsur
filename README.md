@@ -19,7 +19,7 @@ Github加速下载：https://ghproxy.com/
 ## 下次更新时间及内容预告
 - OC更新维护【目前使用起来已经非常稳定，不再频繁更新】
 
-![image](https://github.com/xzz024/OC7.1-EFI-For-Dell-5593-Bigsur/blob/main/ScreenShot/Dell.png)
+![image](https://github.com/xzz024/OC7.1-EFI-For-Dell-5593-Bigsur/blob/main/ScreenShot/Dell2022.png)
 
 ## 我的配置
 ⚠️BIOS版本推荐≦1.15.0，最新BIOS版本1.16.0安装、使用会出现问题[#5](https://github.com/xzz024/OC7.1-EFI-For-Dell-5593-Bigsur/issues/5)，降级参考[Dell_BIOS降级文档](https://www.dell.com/support/kbdoc/zh-cn/000130652/在戴尔计算机上降级系统bios)
