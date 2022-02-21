@@ -41,7 +41,7 @@ Github加速下载：https://ghproxy.com/
 |  鼠标| 罗技M590|
 
 ## 系统截图
-<img src="https://s4.ax1x.com/2022/02/20/HOCtIK.png" width = "657" height = "436" alt="mymac" align=center />
+<img src="https://s4.ax1x.com/2022/02/21/HX5RxS.png" width = "657" height = "436" alt="mymac" align=center />
 <img src="https://s4.ax1x.com/2022/02/20/HOC6dP.png" width = "657" height = "462" alt="gpu" align=center />
 <img src="https://s4.ax1x.com/2022/02/20/HOCyZt.png" width = "657" height = "421" alt="hidpi" align=center />
 <img src="https://z3.ax1x.com/2021/08/08/fQLxRx.png" width = "657" height = "454" alt="xianka" align=center />
@@ -86,8 +86,8 @@ Github加速下载：https://ghproxy.com/
 
 ## 项目清单
 
-- [x] ALC236 内部扬声器(耳机正常)
-- [x] ALC236 内部麦克风(耳机不正常)
+- [x] ALC236 内部扬声器(插孔耳机正常)
+- [x] ALC236 内部麦克风(插孔耳机不正常)
 - [x] 所有的USB端口（如不符建议自行定制）
 - [x] 风扇调速、CPU变频 / 睡眠
 - [x] 带有手势的I2C触摸板
@@ -101,7 +101,7 @@ Github加速下载：https://ghproxy.com/
 - [x] 笔记本合盖睡眠唤醒`2021-08-13`
 - [x] ACPI 电池
 - [x] 从OpenCore启动Windows（不推荐）
-- [x] HDMI 输出
+- [ ] HDMI 输出
 - [x] 深度睡眠唤醒（ice lake 10nm）`2021-08-13`
 - [x] 开机登录界面黑屏5-7秒，按键闪屏，这是Ice Lake的通病（已解决）`2021-10-01`
 
