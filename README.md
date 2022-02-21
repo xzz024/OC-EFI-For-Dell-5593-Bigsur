@@ -117,7 +117,7 @@ Github加速下载：https://ghproxy.com/
 - 开启HIDPI见👇的教程，建议开启，开启时建议设置`1536×864`，类似Win10下缩放`125%`，**（115%【1680×945】、125%【1536×864】、135%【1440×810】、150%【1280×720】）** 字体更加清晰，同时记得在NVRAM中修改`UIScale`为02保持开机Logo大小一致。如果在线脚本有问题，请使用离线脚本[HIDPI](https://www.jianguoyun.com/p/DTopycAQ_pOuCBiO7YcE)开启(开启HIDPI，核显性能不够可能会造成部分动画场景不流畅的现象，请自行取舍)
 - ~~睡眠可能有问题，有待观察（ice lake 10nm）~~
 - ~~登录界面屏幕显示黑色故障5-7秒或任何其他屏幕显示问题(这与所有Ice Lake相关)//可能会在Monterey中被更新修复，至少现在它有不同的“症状”~~
-- 建议再添加一个8G内存组成双通道，无论对核显都有一定的提升，此外，Macos12相比Windows更加吃内存，而且在多开软件时8G内存明显有迟滞卡顿感（物理存储不足，虚拟内存补充），而16G内存则非常轻松。
+- 建议再添加一个8G内存组成双通道，无论对核显、CPU都有一定的提升（跑分增加），此外，Macos12相比Windows更加吃内存，而且在多开软件时8G内存明显有迟滞卡顿感（物理存储不足，虚拟内存补充），而16G内存则非常轻松。
 
 ## 更新日志
 #### 2022.02.20 更新OC，macOS12，添加内存
@@ -180,8 +180,8 @@ Github加速下载：https://ghproxy.com/
 **结论：在Win10下，应该算正常环境下的性能测试，可见这颗U的最终得分并不好看，在同Ice Lake架构上对比，性能略强于`Macbook Air9,1`，弱于`Macbook Pro16,2`**
 
 - 在`Bigsur 11.5.2`下：[1035G1的具体表现](https://browser.geekbench.com/v5/cpu/9335841)
-   - 单核[Single-Core Score]：`1124`
-   - 多核[Multi-Core Score]：`3222`
+   - 单核[Single-Core Score]：`1124`-----`1177`【16GB】
+   - 多核[Multi-Core Score]：`3222`-----`4057`【16GB】
    - 核显[Intel(R) UHD Graphics]：[`3660`](https://browser.geekbench.com/v5/compute/3228959)|[`3692`](https://browser.geekbench.com/v5/compute/3232168)|//		Metal：[`4060`](https://browser.geekbench.com/v5/compute/3228984) 
    - 独显[NVDIA GeForce MX230]：`无法驱动`[详细结果](about:blank)
 
