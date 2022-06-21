@@ -18,8 +18,7 @@
 Github加速下载：https://ghproxy.com/
 ## 下次更新时间及内容预告
 - OC更新维护【目前使用起来已经非常稳定，不再频繁更新】
-
-![image](https://s4.ax1x.com/2022/02/20/HOCeaV.png)
+<img src="https://s4.ax1x.com/2022/02/20/HOCeaV.png" alt="网络问题加载失败!" width="800" height="" align="center">
 
 ## 我的配置
 ⚠️BIOS版本推荐≦1.15.0，最新BIOS版本1.16.0安装、使用会出现问题[#5](https://github.com/xzz024/OC7.1-EFI-For-Dell-5593-Bigsur/issues/5)，降级参考[Dell_BIOS降级文档](https://www.dell.com/support/kbdoc/zh-cn/000130652/在戴尔计算机上降级系统bios)
@@ -41,15 +40,15 @@ Github加速下载：https://ghproxy.com/
 |  鼠标| 罗技M590|
 
 ## 系统截图
-<img src="https://s4.ax1x.com/2022/02/21/HX5RxS.png" width = "657" height = "436" alt="mymac" align=center />
-<img src="https://s4.ax1x.com/2022/02/20/HOC6dP.png" width = "657" height = "462" alt="gpu" align=center />
-<img src="https://s4.ax1x.com/2022/02/20/HOCyZt.png" width = "657" height = "421" alt="hidpi" align=center />
-<img src="https://z3.ax1x.com/2021/08/08/fQLxRx.png" width = "657" height = "454" alt="xianka" align=center />
-<img src="https://z3.ax1x.com/2021/08/08/fQOXnS.png" width = "657" height = "691" alt="usb" align=center />
-<img src="https://github.com/xzz024/OC7.1-EFI-For-Dell-5593-Bigsur/blob/main/ScreenShot/wifi012.png" width = "657" height = "462" alt="wifi" align=center />
-<img src="https://z3.ax1x.com/2021/08/08/fQv1Te.png" width = "657" height = "370" alt="OCStart" align=center />
-<img src="https://github.com/xzz024/OC7.1-EFI-For-Dell-5593-Bigsur/blob/main/ScreenShot/接力WATCH.png" width = "187" height = "168" alt="OCStart" align=center />
-<img src="https://github.com/xzz024/OC7.1-EFI-For-Dell-5593-Bigsur/blob/main/ScreenShot/Watch解锁.JPG" width = "368" height = "448" alt="OCStart" align=center />
+<img src="https://s4.ax1x.com/2022/02/21/HX5RxS.png" width = "500" height = "" alt="mymac" align=center />
+<img src="https://s4.ax1x.com/2022/02/20/HOC6dP.png" width = "500" height = "" alt="gpu" align=center />
+<img src="https://s4.ax1x.com/2022/02/20/HOCyZt.png" width = "500" height = "" alt="hidpi" align=center />
+<img src="https://z3.ax1x.com/2021/08/08/fQLxRx.png" width = "500" height = "" alt="xianka" align=center />
+<img src="https://z3.ax1x.com/2021/08/08/fQOXnS.png" width = "500" height = "" alt="usb" align=center />
+<img src="https://github.com/xzz024/OC7.1-EFI-For-Dell-5593-Bigsur/blob/main/ScreenShot/wifi012.png" width = "500" height = "" alt="wifi" align=center />
+<img src="https://z3.ax1x.com/2021/08/08/fQv1Te.png" width = "500" height = "" alt="OCStart" align=center />
+<img src="https://github.com/xzz024/OC7.1-EFI-For-Dell-5593-Bigsur/blob/main/ScreenShot/接力WATCH.png" width = "200" height = "" alt="OCStart" align=center />
+<img src="https://github.com/xzz024/OC7.1-EFI-For-Dell-5593-Bigsur/blob/main/ScreenShot/Watch解锁.JPG" width = "200" height = "" alt="OCStart" align=center />
 还有无线随航、剪贴板等等功能不一一展示，如有生态需求的，网卡早换早享受。手上目前无Apple设备只要求上网的，Intel或USB网卡均可
 
 ## 硬件建议
@@ -57,18 +56,18 @@ Github加速下载：https://ghproxy.com/
 **Dell5593**--15.6英寸：转接卡+`BCM94360CS2`（注意转接板的螺丝需要用**绝缘纸**盖住，否则会导致网卡背面短路无法开机!）     
 【挡的铁块需要用硬力向左掰开一点，这样刚好合适】
 
-<img src="https://github.com/xzz024/OC7.1-EFI-For-Dell-5593-Bigsur/blob/main/ScreenShot/转接卡.JPG" width = "657" height = "876" alt="OCStart" align=center />
-<img src="https://github.com/xzz024/OC7.1-EFI-For-Dell-5593-Bigsur/blob/main/ScreenShot/bcm94360.JPG" width = "657" height = "492" alt="OCStart" align=center />
+<img src="https://github.com/xzz024/OC7.1-EFI-For-Dell-5593-Bigsur/blob/main/ScreenShot/转接卡.JPG" width = "500" height = "" alt="OCStart" align=center />
+<img src="https://github.com/xzz024/OC7.1-EFI-For-Dell-5593-Bigsur/blob/main/ScreenShot/bcm94360.JPG" width = "500" height = "" alt="OCStart" align=center />
 
 
 ### 2.添加8G内存条组成双通道
 添加前：【8GB】
 
-<img src="https://s4.ax1x.com/2022/02/20/HOCILn.png" width = "657" height = "767" alt="OCStart" align=center />
+<img src="https://s4.ax1x.com/2022/02/20/HOCILn.png" width = "500" height = "" alt="OCStart" align=center />
 
 添加后：【16GB】
 
-<img src="https://s4.ax1x.com/2022/02/20/HOC7d0.png" width = "657" height = "820" alt="OCStart" align=center />
+<img src="https://s4.ax1x.com/2022/02/20/HOC7d0.png" width = "500" height = "" alt="OCStart" align=center />
 
 总之，Macos12比Windows更加吃内存，如果经常使用Windows，macos用来玩可以不加。在Macos12上多开软件或长时间不重启很容易内存不足，而启用速率低的虚拟内存来补充，从而造成卡顿现象。
 经常使用macOS的建议加内存，不仅对核显有一定的提升，双通道对整机都有提升。
