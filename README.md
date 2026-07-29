@@ -1,4 +1,42 @@
 # Open Core DELL Inspiron 5593
+
+> [!WARNING]
+> ## 项目已停止维护 / No Longer Maintained
+>
+> 本项目是我在 2020–2022 年间为 **Dell Inspiron 5593（Intel Core i5-1035G1）**
+> 制作和维护的 Hackintosh / OpenCore 配置。
+>
+> 由于我已不再持有这台设备，也已经停止使用 Hackintosh，
+> 本仓库自 2022 年后不再维护，不再提供硬件适配、故障排查或版本更新。
+>
+> 本仓库现仅作为**历史项目记录和技术参考**保留。
+>
+> This project was created and maintained between **2020 and 2022** for the
+> **Dell Inspiron 5593 (Intel Core i5-1035G1)**.
+>
+> I no longer own this device or use Hackintosh. This repository is no longer
+> maintained, and no further hardware support, troubleshooting, or OpenCore updates
+> are planned.
+>
+> The repository is preserved for **historical and reference purposes only**.
+
+---
+
+> [!NOTE]
+> **以下内容为历史 README 原文。**
+>
+> 为保留项目当时的开发状态、使用环境和记录，下面内容保持原样，不再更新。
+> 其中关于 macOS、OpenCore、驱动版本、兼容性、下载地址、更新计划和使用建议等信息，
+> 均反映当时的情况，**不代表当前仍然有效或兼容**。
+>
+> **The content below is the original historical README and is preserved as-is.**
+> Information such as compatibility, software versions, download links, update plans,
+> and usage recommendations reflects the state of the project at that time and may
+> no longer be valid today.
+
+---
+
+
 适用于Dell灵越5593型号笔记本电脑（1035G1）。经过不懈的研究，完美度达到99%+！   
 
 已更新OC正式版`0.7.8`/已安装`Monterey`12正式版/更换免驱卡**BCM 94360cs2**更加接近完美（Apple生态体验），硬件安装图见下 
